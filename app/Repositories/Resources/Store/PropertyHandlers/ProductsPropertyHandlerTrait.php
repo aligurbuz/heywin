@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -67,5 +67,7 @@ trait ProductsPropertyHandlerTrait
 	 *
 	 * @var array
 	 */
-	protected array $addPostQueries = [];
+	protected array $addPostQueries = [
+        'category' => 'store.productCategories'
+    ];
 }

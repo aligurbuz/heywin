@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Client\Store\Products\Update;
 
@@ -18,7 +18,7 @@ class UpdateClient extends Client
 	 *
 	 * @var array
 	 */
-	protected array $capsule = [];
+	protected array $capsule = ['category'];
 
 	/**
 	 * get model entity validation
@@ -32,5 +32,8 @@ class UpdateClient extends Client
 	 *
 	 * @var array
 	 */
-	protected array $rule = ['product_code' => 'required|integer'];
+	protected array $rule = [
+        'product_code' => 'required|integer',
+        'category' => 'array'
+    ];
 }
