@@ -134,5 +134,17 @@
     "definition.genders.update": {
         "class": "App\\Client\\Definition\\Genders\\Update\\UpdateClient",
         "model": "gender"
+    },
+    "store.products.get": {
+        "class": "App\\Client\\Store\\Products\\Get\\GetClient",
+        "model": "product"
+    },
+    "store.products.create": {
+        "class": "App\\Client\\Store\\Products\\Create\\CreateClient",
+        "model": "product"
+    },
+    "store.products.update": {
+        "class": "App\\Client\\Store\\Products\\Update\\UpdateClient",
+        "model": "product"
     }
 }

@@ -80,5 +80,10 @@
         "controller": "Genders",
         "dir": "Definition",
         "model": "Gender"
+    },
+    "Store/products": {
+        "controller": "Products",
+        "dir": "Store",
+        "model": "Product"
     }
 }

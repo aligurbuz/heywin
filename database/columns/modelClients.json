@@ -62,5 +62,10 @@
         "get": "App\\Client\\Definition\\Genders\\Get\\GetClient",
         "create": "App\\Client\\Definition\\Genders\\Create\\CreateClient",
         "update": "App\\Client\\Definition\\Genders\\Update\\UpdateClient"
+    },
+    "Product": {
+        "get": "App\\Client\\Store\\Products\\Get\\GetClient",
+        "create": "App\\Client\\Store\\Products\\Create\\CreateClient",
+        "update": "App\\Client\\Store\\Products\\Update\\UpdateClient"
     }
 }
