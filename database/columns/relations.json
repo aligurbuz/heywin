@@ -28,6 +28,7 @@
         "Product",
         "ProductCategory",
         "ProductCurrency",
+        "ProductImage",
         "Registration",
         "Role",
         "SuperAdmin",
@@ -53,8 +54,13 @@
         "Localization"
     ],
     "Currency": [
-        "Localization",
-        "ProductCurrency"
+        "ProductCurrency",
+        "Localization"
+    ],
+    "ProductCurrency": [
+        "Currency",
+        "Product",
+        "Localization"
     ],
     "Customer": [
         "CustomerAge",
@@ -98,11 +104,11 @@
     ],
     "Product": [
         "ProductCategory",
+        "ProductCurrency",
         "Localization",
-        "ProductCurrency"
+        "ProductImage"
     ],
-    "ProductCurrency": [
-        "Currency",
+    "ProductImage": [
         "Product",
         "Localization"
     ],

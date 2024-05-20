@@ -106,5 +106,9 @@
     "ProductCurrency": {
         "controller": "ProductCurrencies",
         "dir": "Store"
+    },
+    "ProductImage": {
+        "controller": "Product",
+        "dir": "Images"
     }
 }

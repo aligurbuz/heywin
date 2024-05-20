@@ -182,5 +182,17 @@
     "store.productCurrencies.update": {
         "class": "App\\Client\\Store\\ProductCurrencies\\Update\\UpdateClient",
         "model": "productCurrency"
+    },
+    "images.product.get": {
+        "class": "App\\Client\\Images\\Product\\Get\\GetClient",
+        "model": "productImage"
+    },
+    "images.product.create": {
+        "class": "App\\Client\\Images\\Product\\Create\\CreateClient",
+        "model": "productImage"
+    },
+    "images.product.update": {
+        "class": "App\\Client\\Images\\Product\\Update\\UpdateClient",
+        "model": "productImage"
     }
 }

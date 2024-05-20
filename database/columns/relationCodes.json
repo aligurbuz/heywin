@@ -73,13 +73,17 @@
     "product_code": [
         "Product",
         "ProductCategory",
-        "ProductCurrency"
+        "ProductCurrency",
+        "ProductImage"
     ],
     "product_category_code": [
         "ProductCategory"
     ],
     "product_currency_code": [
         "ProductCurrency"
+    ],
+    "product_image_code": [
+        "ProductImage"
     ],
     "registration_code": [
         "Registration"

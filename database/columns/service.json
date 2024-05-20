@@ -100,5 +100,10 @@
         "controller": "ProductCurrencies",
         "dir": "Store",
         "model": "ProductCurrency"
+    },
+    "Images/product": {
+        "controller": "Product",
+        "dir": "Images",
+        "model": "ProductImage"
     }
 }
