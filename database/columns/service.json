@@ -95,5 +95,10 @@
         "controller": "ProductCategories",
         "dir": "Store",
         "model": "ProductCategory"
+    },
+    "Store/productCurrencies": {
+        "controller": "ProductCurrencies",
+        "dir": "Store",
+        "model": "ProductCurrency"
     }
 }

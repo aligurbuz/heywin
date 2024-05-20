@@ -22,7 +22,8 @@
         "CustomerContact"
     ],
     "currency_code": [
-        "Currency"
+        "Currency",
+        "ProductCurrency"
     ],
     "customer_code": [
         "Customer",
@@ -71,10 +72,14 @@
     ],
     "product_code": [
         "Product",
-        "ProductCategory"
+        "ProductCategory",
+        "ProductCurrency"
     ],
     "product_category_code": [
         "ProductCategory"
+    ],
+    "product_currency_code": [
+        "ProductCurrency"
     ],
     "registration_code": [
         "Registration"

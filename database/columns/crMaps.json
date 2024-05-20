@@ -170,5 +170,17 @@
     "store.productCategories.update": {
         "class": "App\\Client\\Store\\ProductCategories\\Update\\UpdateClient",
         "model": "productCategory"
+    },
+    "store.productCurrencies.get": {
+        "class": "App\\Client\\Store\\ProductCurrencies\\Get\\GetClient",
+        "model": "productCurrency"
+    },
+    "store.productCurrencies.create": {
+        "class": "App\\Client\\Store\\ProductCurrencies\\Create\\CreateClient",
+        "model": "productCurrency"
+    },
+    "store.productCurrencies.update": {
+        "class": "App\\Client\\Store\\ProductCurrencies\\Update\\UpdateClient",
+        "model": "productCurrency"
     }
 }

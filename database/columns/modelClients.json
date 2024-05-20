@@ -77,5 +77,10 @@
         "get": "App\\Client\\Store\\ProductCategories\\Get\\GetClient",
         "create": "App\\Client\\Store\\ProductCategories\\Create\\CreateClient",
         "update": "App\\Client\\Store\\ProductCategories\\Update\\UpdateClient"
+    },
+    "ProductCurrency": {
+        "get": "App\\Client\\Store\\ProductCurrencies\\Get\\GetClient",
+        "create": "App\\Client\\Store\\ProductCurrencies\\Create\\CreateClient",
+        "update": "App\\Client\\Store\\ProductCurrencies\\Update\\UpdateClient"
     }
 }

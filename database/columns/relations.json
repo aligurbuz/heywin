@@ -1,7 +1,12 @@
 {
     "Category": [
-        "Localization",
-        "ProductCategory"
+        "ProductCategory",
+        "Localization"
+    ],
+    "ProductCategory": [
+        "Category",
+        "Product",
+        "Localization"
     ],
     "Localization": [
         "Category",
@@ -22,6 +27,7 @@
         "Permission",
         "Product",
         "ProductCategory",
+        "ProductCurrency",
         "Registration",
         "Role",
         "SuperAdmin",
@@ -47,7 +53,8 @@
         "Localization"
     ],
     "Currency": [
-        "Localization"
+        "Localization",
+        "ProductCurrency"
     ],
     "Customer": [
         "CustomerAge",
@@ -90,11 +97,12 @@
         "Localization"
     ],
     "Product": [
+        "ProductCategory",
         "Localization",
-        "ProductCategory"
+        "ProductCurrency"
     ],
-    "ProductCategory": [
-        "Category",
+    "ProductCurrency": [
+        "Currency",
         "Product",
         "Localization"
     ],
