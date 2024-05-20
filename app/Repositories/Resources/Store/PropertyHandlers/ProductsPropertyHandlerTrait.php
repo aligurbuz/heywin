@@ -11,7 +11,9 @@ trait ProductsPropertyHandlerTrait
 	 *
 	 * @var array
 	 */
-	protected array $ranges = [];
+	protected array $ranges = [
+        'category' => 'It helps you to get the categories of the product.'
+    ];
 
 	/**
 	 * localization values for repository
