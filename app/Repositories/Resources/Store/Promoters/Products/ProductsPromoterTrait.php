@@ -56,4 +56,20 @@ trait ProductsPromoterTrait
             ]
         ]);
     }
+
+    public function currency(): void
+    {
+        assignQueryParameters([
+            'with' => [
+                'productCurrencies' => [
+                    'select' => '*',
+                    'with' => [
+                        'currency' => [
+                            'select' => 'name'
+                        ]
+                    ]
+                ]
+            ]
+        ]);
+    }
 }

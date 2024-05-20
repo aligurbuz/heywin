@@ -9,30 +9,31 @@ use App\Models\Product;
 
 class CreateClient extends Client
 {
-	use GeneratorTrait;
-	use ProductsMainSupport;
-	use ClientAutoGeneratorTrait;
+    use GeneratorTrait;
+    use ProductsMainSupport;
+    use ClientAutoGeneratorTrait;
 
-	/**
-	 * get capsule for client
-	 *
-	 * @var array
-	 */
-	protected array $capsule = ['category'];
+    /**
+     * get capsule for client
+     *
+     * @var array
+     */
+    protected array $capsule = ['category', 'currency'];
 
-	/**
-	 * get model entity validation
-	 *
-	 * @var array|string[]
-	 */
-	protected array $model = [Product::class];
+    /**
+     * get model entity validation
+     *
+     * @var array|string[]
+     */
+    protected array $model = [Product::class];
 
-	/**
-	 * get rule for client
-	 *
-	 * @var array
-	 */
-	protected array $rule = [
-        'category' => 'required|array'
+    /**
+     * get rule for client
+     *
+     * @var array
+     */
+    protected array $rule = [
+        'category' => 'required|array',
+        'currency' => 'array',
     ];
 }

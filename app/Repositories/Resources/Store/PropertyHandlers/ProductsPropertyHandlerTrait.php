@@ -12,7 +12,8 @@ trait ProductsPropertyHandlerTrait
 	 * @var array
 	 */
 	protected array $ranges = [
-        'category' => 'It helps you to get the categories of the product.'
+        'category' => 'It helps you to get the categories of the product.',
+        'currency' => 'It helps you to get the currency of the product.',
     ];
 
 	/**
@@ -70,6 +71,7 @@ trait ProductsPropertyHandlerTrait
 	 * @var array
 	 */
 	protected array $addPostQueries = [
-        'category' => 'store.productCategories'
+        'category' => 'store.productCategories',
+        'currency' => 'store.productCurrencies',
     ];
 }

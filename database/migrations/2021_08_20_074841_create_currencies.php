@@ -34,7 +34,7 @@ class CreateCurrencies extends Migration
         $currencies = [
             [
                 'id' => 1,
-                'currency_code' => crc32(config('app.name').'_usdCurrency'),
+                'currency_code' => 1545417135,
                 'symbol' => '$',
                 'name' => 'USD',
                 'symbol_place_status' => 0,
@@ -43,7 +43,7 @@ class CreateCurrencies extends Migration
             ],
             [
                 'id' => 2,
-                'currency_code' => crc32(config('app.name').'_euroCurrency'),
+                'currency_code' => 742098090,
                 'symbol' => '€',
                 'name' => 'EURO',
                 'symbol_place_status' => 0,
