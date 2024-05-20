@@ -49,6 +49,8 @@ use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
 use App\Repositories\Resources\User\PhotosRepository;
 use App\Repositories\Resources\User\UserRepository;
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\Resources\Store\Contracts\StoreProductCategoriesRepositoryContract;
+use App\Repositories\Resources\Store\ProductCategoriesRepository as StoreProductCategoriesRepository;
 use App\Repositories\Resources\Store\Contracts\StoreCategoriesRepositoryContract;
 use App\Repositories\Resources\Store\CategoriesRepository as StoreCategoriesRepository;
 use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
@@ -89,6 +91,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(DefinitionGendersRepositoryContract::class, DefinitionGendersRepository::class);
         $this->app->bind(StoreProductsRepositoryContract::class,StoreProductsRepository::class);
         $this->app->bind(StoreCategoriesRepositoryContract::class,StoreCategoriesRepository::class);
+        $this->app->bind(StoreProductCategoriesRepositoryContract::class,StoreProductCategoriesRepository::class);
         //newBind
     }
 

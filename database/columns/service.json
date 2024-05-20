@@ -90,5 +90,10 @@
         "controller": "Categories",
         "dir": "Store",
         "model": "Category"
+    },
+    "Store/productCategories": {
+        "controller": "ProductCategories",
+        "dir": "Store",
+        "model": "ProductCategory"
     }
 }

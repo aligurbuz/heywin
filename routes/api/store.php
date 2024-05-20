@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\Store\ProductCategoriesController;
 use App\Http\Controllers\Api\Store\CategoriesController;
 use App\Http\Controllers\Api\Store\ProductsController;
 
@@ -13,4 +14,8 @@ Route::prefix('store')->group(function(){
     Route::get('/categories', [CategoriesController::class,'get']);
     Route::post('/categories', [CategoriesController::class,'create']);
     Route::put('/categories', [CategoriesController::class,'update']);
+
+    Route::get('/productCategories', [ProductCategoriesController::class,'get']);
+    Route::post('/productCategories', [ProductCategoriesController::class,'create']);
+    Route::put('/productCategories', [ProductCategoriesController::class,'update']);
 });

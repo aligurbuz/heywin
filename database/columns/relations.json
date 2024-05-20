@@ -1,6 +1,7 @@
 {
     "Category": [
-        "Localization"
+        "Localization",
+        "ProductCategory"
     ],
     "Localization": [
         "Category",
@@ -20,6 +21,7 @@
         "PasswordChange",
         "Permission",
         "Product",
+        "ProductCategory",
         "Registration",
         "Role",
         "SuperAdmin",
@@ -88,6 +90,12 @@
         "Localization"
     ],
     "Product": [
+        "Localization",
+        "ProductCategory"
+    ],
+    "ProductCategory": [
+        "Category",
+        "Product",
         "Localization"
     ],
     "Registration": [

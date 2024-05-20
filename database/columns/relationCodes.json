@@ -3,7 +3,8 @@
         "AccessLogger"
     ],
     "category_code": [
-        "Category"
+        "Category",
+        "ProductCategory"
     ],
     "city_code": [
         "City",
@@ -69,7 +70,11 @@
         "Permission"
     ],
     "product_code": [
-        "Product"
+        "Product",
+        "ProductCategory"
+    ],
+    "product_category_code": [
+        "ProductCategory"
     ],
     "registration_code": [
         "Registration"
