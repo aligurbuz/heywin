@@ -72,4 +72,15 @@ trait ProductsPromoterTrait
             ]
         ]);
     }
+
+    public function image(): void
+    {
+        assignQueryParameters([
+            'with' => [
+                'productImages' => [
+                    'select' => '*'
+                ]
+            ]
+        ]);
+    }
 }

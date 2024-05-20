@@ -12,8 +12,9 @@ trait ProductsPropertyHandlerTrait
 	 * @var array
 	 */
 	protected array $ranges = [
-        'category' => 'It helps you to get the categories of the product.',
+        'category' => 'It helps you to get the category of the product.',
         'currency' => 'It helps you to get the currency of the product.',
+        'image' => 'It helps you to get the image of the product.',
     ];
 
 	/**
