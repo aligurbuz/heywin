@@ -94,5 +94,9 @@
     "Product": {
         "controller": "Products",
         "dir": "Store"
+    },
+    "Category": {
+        "controller": "Categories",
+        "dir": "Store"
     }
 }

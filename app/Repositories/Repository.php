@@ -27,6 +27,7 @@ use App\Repositories\Resources\Timezones\Contracts\TimezonesRepositoryContract;
 use App\Repositories\Resources\User\Contracts\PhotosRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserActivationsRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
+use App\Repositories\Resources\Store\Contracts\StoreCategoriesRepositoryContract;
 use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
 
 /**
@@ -35,6 +36,16 @@ use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
  */
 class Repository
 {
+    /**
+     * get category repository instance
+     *
+     * @return StoreCategoriesRepositoryContract
+     */
+    public static function category() : StoreCategoriesRepositoryContract
+    {
+        return app()->get(StoreCategoriesRepositoryContract::class);
+    }
+    
     /**
      * get product repository instance
      *

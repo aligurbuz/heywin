@@ -146,5 +146,17 @@
     "store.products.update": {
         "class": "App\\Client\\Store\\Products\\Update\\UpdateClient",
         "model": "product"
+    },
+    "store.categories.get": {
+        "class": "App\\Client\\Store\\Categories\\Get\\GetClient",
+        "model": "category"
+    },
+    "store.categories.create": {
+        "class": "App\\Client\\Store\\Categories\\Create\\CreateClient",
+        "model": "category"
+    },
+    "store.categories.update": {
+        "class": "App\\Client\\Store\\Categories\\Update\\UpdateClient",
+        "model": "category"
     }
 }

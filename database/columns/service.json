@@ -85,5 +85,10 @@
         "controller": "Products",
         "dir": "Store",
         "model": "Product"
+    },
+    "Store/categories": {
+        "controller": "Categories",
+        "dir": "Store",
+        "model": "Category"
     }
 }
