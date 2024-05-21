@@ -18,5 +18,10 @@
         "body": {
             "raw": "{\n    \"description\": \"asasa\",\n    \"draw_date\": \"2024-11-11 00:00:00\",\n    \"end_date\": \"2024-11-11 00:00:00\",\n    \"image_url\": \"string\",\n    \"is_auto_draw\": \"0\",\n    \"max_ticket\": \"0\",\n    \"name\": \"ssasas\",\n    \"price\": \"100\",\n    \"product_code\": 1211926719,\n    \"start_date\": \"2024-11-11 00:00:00\",\n    \"stock\": \"0\",\n    \"video_url\": \"string\",\n    \"winner_count\": \"1\",\n    \"country\": [\n        {\n            \"country_code\": 3310308172\n        }\n    ]\n}"
         }
+    },
+    "POST_Store/Products" : {
+        "body": {
+            "raw": "{\n    \"description\": \"Test\",\n    \"is_digital\": \"0\",\n    \"name\": \"Foex\",\n    \"price\": 50.67,\n    \"status\": \"1\",\n    \"category\" : [\n        {\n            \"category_code\" : 2715346355\n        }\n    ]\n}"
+        }
     }
 }

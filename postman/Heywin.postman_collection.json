@@ -2669,7 +2669,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\"description\":\"string\",\"is_deleted\":\"0\",\"is_digital\":\"0\",\"name\":\"string\",\"price\":\"double\",\"status\":\"1\"}",
+                                    "raw": "{\n    \"description\": \"Test\",\n    \"is_digital\": \"0\",\n    \"name\": \"Foex\",\n    \"price\": 50.67,\n    \"status\": \"1\",\n    \"category\" : [\n        {\n            \"category_code\" : 2715346355\n        }\n    ]\n}",
                                     "options": {
                                         "raw": {
                                             "language": "json"
