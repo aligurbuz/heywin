@@ -206,5 +206,17 @@
     "store.draws.update": {
         "class": "App\\Client\\Store\\Draws\\Update\\UpdateClient",
         "model": "draw"
+    },
+    "store.drawCountries.get": {
+        "class": "App\\Client\\Store\\DrawCountries\\Get\\GetClient",
+        "model": "drawCountry"
+    },
+    "store.drawCountries.create": {
+        "class": "App\\Client\\Store\\DrawCountries\\Create\\CreateClient",
+        "model": "drawCountry"
+    },
+    "store.drawCountries.update": {
+        "class": "App\\Client\\Store\\DrawCountries\\Update\\UpdateClient",
+        "model": "drawCountry"
     }
 }

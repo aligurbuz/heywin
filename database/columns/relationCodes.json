@@ -12,7 +12,8 @@
     ],
     "country_code": [
         "City",
-        "Country"
+        "Country",
+        "DrawCountry"
     ],
     "num_code": [
         "Country"
@@ -52,7 +53,8 @@
         "District"
     ],
     "draw_code": [
-        "Draw"
+        "Draw",
+        "DrawCountry"
     ],
     "product_code": [
         "Draw",
@@ -60,6 +62,9 @@
         "ProductCategory",
         "ProductCurrency",
         "ProductImage"
+    ],
+    "draw_country_code": [
+        "DrawCountry"
     ],
     "excel_code": [
         "Excel"

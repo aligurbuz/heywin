@@ -110,5 +110,10 @@
         "controller": "Draws",
         "dir": "Store",
         "model": "Draw"
+    },
+    "Store/drawCountries": {
+        "controller": "DrawCountries",
+        "dir": "Store",
+        "model": "DrawCountry"
     }
 }

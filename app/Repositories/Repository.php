@@ -27,6 +27,7 @@ use App\Repositories\Resources\Timezones\Contracts\TimezonesRepositoryContract;
 use App\Repositories\Resources\User\Contracts\PhotosRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserActivationsRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
+use App\Repositories\Resources\Store\Contracts\StoreDrawCountriesRepositoryContract;
 use App\Repositories\Resources\Store\Contracts\StoreDrawsRepositoryContract;
 use App\Repositories\Resources\Images\Contracts\ImagesProductRepositoryContract;
 use App\Repositories\Resources\Store\Contracts\StoreProductCurrenciesRepositoryContract;
@@ -40,6 +41,16 @@ use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
  */
 class Repository
 {
+    /**
+     * get drawCountry repository instance
+     *
+     * @return StoreDrawCountriesRepositoryContract
+     */
+    public static function drawCountry() : StoreDrawCountriesRepositoryContract
+    {
+        return app()->get(StoreDrawCountriesRepositoryContract::class);
+    }
+    
     /**
      * get draw repository instance
      *

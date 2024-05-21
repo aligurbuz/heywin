@@ -92,5 +92,10 @@
         "get": "App\\Client\\Store\\Draws\\Get\\GetClient",
         "create": "App\\Client\\Store\\Draws\\Create\\CreateClient",
         "update": "App\\Client\\Store\\Draws\\Update\\UpdateClient"
+    },
+    "DrawCountry": {
+        "get": "App\\Client\\Store\\DrawCountries\\Get\\GetClient",
+        "create": "App\\Client\\Store\\DrawCountries\\Create\\CreateClient",
+        "update": "App\\Client\\Store\\DrawCountries\\Update\\UpdateClient"
     }
 }

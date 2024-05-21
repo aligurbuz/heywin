@@ -20,6 +20,7 @@
         "CustomerImage",
         "District",
         "Draw",
+        "DrawCountry",
         "Excel",
         "Gender",
         "Language",
@@ -52,7 +53,8 @@
     "Country": [
         "City",
         "District",
-        "Localization"
+        "Localization",
+        "DrawCountry"
     ],
     "Currency": [
         "ProductCurrency",
@@ -93,13 +95,19 @@
     ],
     "Draw": [
         "Product",
-        "Localization"
+        "Localization",
+        "DrawCountry"
     ],
     "Product": [
         "Draw",
         "ProductCategory",
         "ProductCurrency",
         "ProductImage",
+        "Localization"
+    ],
+    "DrawCountry": [
+        "Country",
+        "Draw",
         "Localization"
     ],
     "Excel": [
