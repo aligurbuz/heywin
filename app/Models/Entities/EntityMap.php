@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return Ticket
+     */
+    public function ticket(object $query) : Ticket
+    {
+        return new Ticket($query);
+    }
+    
+    /**
+     * @param object $query
      * @return DrawCountry
      */
     public function drawCountry(object $query) : DrawCountry

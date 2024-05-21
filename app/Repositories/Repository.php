@@ -27,6 +27,7 @@ use App\Repositories\Resources\Timezones\Contracts\TimezonesRepositoryContract;
 use App\Repositories\Resources\User\Contracts\PhotosRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserActivationsRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
+use App\Repositories\Resources\Store\Contracts\StoreDrawTicketsRepositoryContract;
 use App\Repositories\Resources\Store\Contracts\StoreDrawCountriesRepositoryContract;
 use App\Repositories\Resources\Store\Contracts\StoreDrawsRepositoryContract;
 use App\Repositories\Resources\Images\Contracts\ImagesProductRepositoryContract;
@@ -41,6 +42,16 @@ use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
  */
 class Repository
 {
+    /**
+     * get ticket repository instance
+     *
+     * @return StoreDrawTicketsRepositoryContract
+     */
+    public static function ticket() : StoreDrawTicketsRepositoryContract
+    {
+        return app()->get(StoreDrawTicketsRepositoryContract::class);
+    }
+    
     /**
      * get drawCountry repository instance
      *

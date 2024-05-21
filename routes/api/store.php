@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\Store\DrawTicketsController;
 use App\Http\Controllers\Api\Store\DrawCountriesController;
 use App\Http\Controllers\Api\Store\DrawsController;
 use App\Http\Controllers\Api\Store\ProductCurrenciesController;
@@ -33,4 +34,8 @@ Route::prefix('store')->group(function(){
     Route::get('/drawCountries', [DrawCountriesController::class,'get']);
     Route::post('/drawCountries', [DrawCountriesController::class,'create']);
     Route::put('/drawCountries', [DrawCountriesController::class,'update']);
+
+    Route::get('/drawTickets', [DrawTicketsController::class,'get']);
+    Route::post('/drawTickets', [DrawTicketsController::class,'create']);
+    Route::put('/drawTickets', [DrawTicketsController::class,'update']);
 });

@@ -36,7 +36,7 @@
         "/Users/teamprocure/Desktop/apps/api/app/Docs/Endpoints/Password/Password.json": 0,
         "/Users/teamprocure/Desktop/apps/api/app/Docs/Endpoints/Definition/Definition.json": 0,
         "/Users/teamprocure/Desktop/apps/api/app/Docs/Endpoints/Customer/Customer.json": 0,
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Store/Store.json": 5,
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Store/Store.json": 6,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json": 0
     },
     "fingerPrints": {
@@ -69,6 +69,7 @@
         "ProductCurrencies_Store_productCurrency": 3,
         "Product_Images_productImage": 0,
         "Draws_Store_draw": 4,
-        "DrawCountries_Store_drawCountry": 5
+        "DrawCountries_Store_drawCountry": 5,
+        "DrawTickets_Store_ticket": 6
     }
 }

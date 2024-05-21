@@ -1,0 +1,36 @@
+<?php 
+
+namespace App\Client\Store\DrawTickets\Get;
+
+use App\Client\Client;
+use App\Client\ClientAutoGeneratorTrait;
+use App\Client\Store\DrawTickets\DrawTicketsMainSupport;
+use App\Models\Ticket;
+
+class GetClient extends Client
+{
+	use GeneratorTrait;
+	use DrawTicketsMainSupport;
+	use ClientAutoGeneratorTrait;
+
+	/**
+	 * get capsule for client
+	 *
+	 * @var array
+	 */
+	protected array $capsule = [];
+
+	/**
+	 * get model entity validation
+	 *
+	 * @var array|string[]
+	 */
+	protected array $model = [Ticket::class];
+
+	/**
+	 * get rule for client
+	 *
+	 * @var array
+	 */
+	protected array $rule = [];
+}

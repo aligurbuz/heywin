@@ -97,5 +97,10 @@
         "get": "App\\Client\\Store\\DrawCountries\\Get\\GetClient",
         "create": "App\\Client\\Store\\DrawCountries\\Create\\CreateClient",
         "update": "App\\Client\\Store\\DrawCountries\\Update\\UpdateClient"
+    },
+    "Ticket": {
+        "get": "App\\Client\\Store\\DrawTickets\\Get\\GetClient",
+        "create": "App\\Client\\Store\\DrawTickets\\Create\\CreateClient",
+        "update": "App\\Client\\Store\\DrawTickets\\Update\\UpdateClient"
     }
 }

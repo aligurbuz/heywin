@@ -118,5 +118,9 @@
     "DrawCountry": {
         "controller": "DrawCountries",
         "dir": "Store"
+    },
+    "Ticket": {
+        "controller": "DrawTickets",
+        "dir": "Store"
     }
 }

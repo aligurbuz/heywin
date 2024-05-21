@@ -115,5 +115,10 @@
         "controller": "DrawCountries",
         "dir": "Store",
         "model": "DrawCountry"
+    },
+    "Store/drawTickets": {
+        "controller": "DrawTickets",
+        "dir": "Store",
+        "model": "Ticket"
     }
 }

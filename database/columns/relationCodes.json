@@ -31,7 +31,8 @@
         "CustomerAge",
         "CustomerContact",
         "CustomerGender",
-        "CustomerImage"
+        "CustomerImage",
+        "Ticket"
     ],
     "customer_age_code": [
         "CustomerAge"
@@ -54,7 +55,8 @@
     ],
     "draw_code": [
         "Draw",
-        "DrawCountry"
+        "DrawCountry",
+        "Ticket"
     ],
     "product_code": [
         "Draw",
@@ -113,6 +115,9 @@
     ],
     "table_change_code": [
         "TableChange"
+    ],
+    "ticket_code": [
+        "Ticket"
     ],
     "timezone_code": [
         "Timezone"

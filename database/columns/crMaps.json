@@ -218,5 +218,17 @@
     "store.drawCountries.update": {
         "class": "App\\Client\\Store\\DrawCountries\\Update\\UpdateClient",
         "model": "drawCountry"
+    },
+    "store.drawTickets.get": {
+        "class": "App\\Client\\Store\\DrawTickets\\Get\\GetClient",
+        "model": "ticket"
+    },
+    "store.drawTickets.create": {
+        "class": "App\\Client\\Store\\DrawTickets\\Create\\CreateClient",
+        "model": "ticket"
+    },
+    "store.drawTickets.update": {
+        "class": "App\\Client\\Store\\DrawTickets\\Update\\UpdateClient",
+        "model": "ticket"
     }
 }
