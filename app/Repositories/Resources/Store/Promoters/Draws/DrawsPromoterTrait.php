@@ -51,4 +51,18 @@ trait DrawsPromoterTrait
             ]
         ]);
     }
+
+    public function country(): void
+    {
+        assignQueryParameters([
+            'with' => [
+                'drawCountries' => [
+                    'select' => '*',
+                    "with" => [
+                        'country' => ['select' => '*']
+                    ]
+                ]
+            ]
+        ]);
+    }
 }

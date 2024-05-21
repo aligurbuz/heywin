@@ -12,7 +12,8 @@ trait DrawsPropertyHandlerTrait
 	 * @var array
 	 */
 	protected array $ranges = [
-        'inDate' => 'Lists valid draws.'
+        'inDate' => 'Lists valid draws.',
+        'country' => 'gets country of the draw.',
     ];
 
 	/**
