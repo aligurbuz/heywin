@@ -1,10 +1,11 @@
-<?php 
+<?php
 
 namespace App\Client\Store\Draws\Update;
 
 use App\Client\Client;
 use App\Client\ClientAutoGeneratorTrait;
 use App\Client\Store\Draws\DrawsMainSupport;
+use App\Exceptions\Exception;
 use App\Models\Draw;
 
 class UpdateClient extends Client
@@ -33,4 +34,17 @@ class UpdateClient extends Client
 	 * @var array
 	 */
 	protected array $rule = ['draw_code' => 'required|integer'];
+
+    /**
+     * @var int
+     */
+    protected int $remainingStock;
+
+    /**
+     * @return void
+     */
+    protected function remainingStock(): void
+    {
+        Exception::customException('remainingStockUpdate');
+    }
 }

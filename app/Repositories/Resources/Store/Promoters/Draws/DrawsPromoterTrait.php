@@ -1,9 +1,10 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace App\Repositories\Resources\Store\Promoters\Draws;
 
+use App\Libs\Date;
 use App\Models\Entities\Draw;
 
 trait DrawsPromoterTrait
@@ -40,4 +41,14 @@ trait DrawsPromoterTrait
 	{
 		return [];
 	}
+
+    public function inDate(): void
+    {
+        assignQueryParameters([
+            'filter' => [
+                'start_date' => ['>=' => Date::now()],
+                'end_date' => ['>=' => Date::now()],
+            ]
+        ]);
+    }
 }

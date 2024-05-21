@@ -3321,7 +3321,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\"description\":\"string\",\"draw_date\":\"timestamp\",\"end_date\":\"timestamp\",\"image_url\":\"string\",\"is_auto_draw\":\"0\",\"is_deleted\":\"0\",\"max_ticket\":\"0\",\"name\":\"string\",\"price\":\"0\",\"product_code\":\"integer\",\"start_date\":\"timestamp\",\"status\":\"1\",\"stock\":\"0\",\"video_url\":\"string\",\"winner_count\":\"1\"}",
+                                    "raw": "{\"description\":\"string\",\"draw_date\":\"timestamp\",\"end_date\":\"timestamp\",\"image_url\":\"string\",\"is_auto_draw\":\"0\",\"is_deleted\":\"0\",\"max_ticket\":\"0\",\"name\":\"string\",\"price\":\"0\",\"product_code\":\"integer\",\"remaining_stock\":\"integer\",\"start_date\":\"timestamp\",\"status\":\"1\",\"stock\":\"0\",\"video_url\":\"string\",\"winner_count\":\"1\"}",
                                     "options": {
                                         "raw": {
                                             "language": "json"
@@ -3374,7 +3374,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\"description\":\"string\",\"draw_code\":\"0\",\"draw_date\":\"timestamp\",\"end_date\":\"timestamp\",\"image_url\":\"string\",\"is_auto_draw\":\"0\",\"is_deleted\":\"0\",\"max_ticket\":\"0\",\"name\":\"string\",\"price\":\"0\",\"product_code\":\"integer\",\"start_date\":\"timestamp\",\"status\":\"1\",\"stock\":\"0\",\"video_url\":\"string\",\"winner_count\":\"1\"}",
+                                    "raw": "{\"description\":\"string\",\"draw_code\":\"0\",\"draw_date\":\"timestamp\",\"end_date\":\"timestamp\",\"image_url\":\"string\",\"is_auto_draw\":\"0\",\"is_deleted\":\"0\",\"max_ticket\":\"0\",\"name\":\"string\",\"price\":\"0\",\"product_code\":\"integer\",\"remaining_stock\":\"integer\",\"start_date\":\"timestamp\",\"status\":\"1\",\"stock\":\"0\",\"video_url\":\"string\",\"winner_count\":\"1\"}",
                                     "options": {
                                         "raw": {
                                             "language": "json"

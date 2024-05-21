@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -11,7 +11,9 @@ trait DrawsPropertyHandlerTrait
 	 *
 	 * @var array
 	 */
-	protected array $ranges = [];
+	protected array $ranges = [
+        'inDate' => 'Lists valid draws.'
+    ];
 
 	/**
 	 * localization values for repository

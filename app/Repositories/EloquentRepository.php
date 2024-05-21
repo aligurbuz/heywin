@@ -238,8 +238,8 @@ class EloquentRepository
         $defaultModelName = $this->getModelName();
 
         $this->graphQl = ($instanceModel)->repository($this)
-            ->filterQuery()
             ->range($this)
+            ->filterQuery()
             ->instruction()
             ->doesntHaveQuery()
             ->hasQuery()

@@ -21,6 +21,7 @@ namespace App\Models\Entities;
  * @property $this name
  * @property $this price
  * @property $this product_code
+ * @property $this remaining_stock
  * @property $this start_date
  * @property $this status
  * @property $this stock
@@ -223,6 +224,17 @@ class Draw
 	protected static function product_code(): mixed
 	{
 		return self::$query->product_code;
+	}
+
+
+	/**
+	 * get remaining_stock column for database table
+	 *
+	 * @return mixed
+	 */
+	protected static function remaining_stock(): mixed
+	{
+		return self::$query->remaining_stock;
 	}
 
 
