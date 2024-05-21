@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return Draw
+     */
+    public function draw(object $query) : Draw
+    {
+        return new Draw($query);
+    }
+    
+    /**
+     * @param object $query
      * @return ProductImage
      */
     public function productImage(object $query) : ProductImage

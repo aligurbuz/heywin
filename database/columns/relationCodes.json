@@ -51,6 +51,16 @@
     "district_code": [
         "District"
     ],
+    "draw_code": [
+        "Draw"
+    ],
+    "product_code": [
+        "Draw",
+        "Product",
+        "ProductCategory",
+        "ProductCurrency",
+        "ProductImage"
+    ],
     "excel_code": [
         "Excel"
     ],
@@ -69,12 +79,6 @@
     ],
     "permission_code": [
         "Permission"
-    ],
-    "product_code": [
-        "Product",
-        "ProductCategory",
-        "ProductCurrency",
-        "ProductImage"
     ],
     "product_category_code": [
         "ProductCategory"

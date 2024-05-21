@@ -105,5 +105,10 @@
         "controller": "Product",
         "dir": "Images",
         "model": "ProductImage"
+    },
+    "Store/draws": {
+        "controller": "Draws",
+        "dir": "Store",
+        "model": "Draw"
     }
 }

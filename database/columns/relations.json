@@ -19,6 +19,7 @@
         "CustomerGender",
         "CustomerImage",
         "District",
+        "Draw",
         "Excel",
         "Gender",
         "Language",
@@ -90,6 +91,17 @@
         "CustomerGender",
         "Localization"
     ],
+    "Draw": [
+        "Product",
+        "Localization"
+    ],
+    "Product": [
+        "Draw",
+        "ProductCategory",
+        "ProductCurrency",
+        "ProductImage",
+        "Localization"
+    ],
     "Excel": [
         "Localization"
     ],
@@ -101,12 +113,6 @@
     ],
     "Permission": [
         "Localization"
-    ],
-    "Product": [
-        "ProductCategory",
-        "ProductCurrency",
-        "Localization",
-        "ProductImage"
     ],
     "ProductImage": [
         "Product",

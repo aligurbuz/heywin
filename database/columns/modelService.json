@@ -110,5 +110,9 @@
     "ProductImage": {
         "controller": "Product",
         "dir": "Images"
+    },
+    "Draw": {
+        "controller": "Draws",
+        "dir": "Store"
     }
 }

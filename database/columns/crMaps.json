@@ -194,5 +194,17 @@
     "images.product.update": {
         "class": "App\\Client\\Images\\Product\\Update\\UpdateClient",
         "model": "productImage"
+    },
+    "store.draws.get": {
+        "class": "App\\Client\\Store\\Draws\\Get\\GetClient",
+        "model": "draw"
+    },
+    "store.draws.create": {
+        "class": "App\\Client\\Store\\Draws\\Create\\CreateClient",
+        "model": "draw"
+    },
+    "store.draws.update": {
+        "class": "App\\Client\\Store\\Draws\\Update\\UpdateClient",
+        "model": "draw"
     }
 }

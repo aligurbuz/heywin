@@ -87,5 +87,10 @@
         "get": "App\\Client\\Images\\Product\\Get\\GetClient",
         "create": "App\\Client\\Images\\Product\\Create\\CreateClient",
         "update": "App\\Client\\Images\\Product\\Update\\UpdateClient"
+    },
+    "Draw": {
+        "get": "App\\Client\\Store\\Draws\\Get\\GetClient",
+        "create": "App\\Client\\Store\\Draws\\Create\\CreateClient",
+        "update": "App\\Client\\Store\\Draws\\Update\\UpdateClient"
     }
 }
