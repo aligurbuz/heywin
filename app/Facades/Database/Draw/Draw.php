@@ -8,6 +8,10 @@ use App\Repositories\Resources\Store\DrawsRepository;
 
 class Draw
 {
+    /**
+     * @param int $drawCode
+     * @return DrawsRepository
+     */
     public static function get(int $drawCode): DrawsRepository
     {
         return AppContainer::use('draw_' . $drawCode, function () use ($drawCode) {
@@ -15,6 +19,10 @@ class Draw
         });
     }
 
+    /**
+     * @param int $drawCode
+     * @return bool
+     */
     public static function isValid(int $drawCode): bool
     {
         return true;
