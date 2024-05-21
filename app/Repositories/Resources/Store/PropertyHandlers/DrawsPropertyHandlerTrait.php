@@ -69,5 +69,7 @@ trait DrawsPropertyHandlerTrait
 	 *
 	 * @var array
 	 */
-	protected array $addPostQueries = [];
+	protected array $addPostQueries = [
+        'country' => 'store.drawCountries'
+    ];
 }
