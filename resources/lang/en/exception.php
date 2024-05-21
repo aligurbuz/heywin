@@ -62,5 +62,6 @@ return [
     'userOwnDeleting'               =>  'The user cannot delete self.',
     'userOwnPassive'                =>  'The user cannot make passive self.',
     'emailVerifiedAt'               =>  'Email_verified_at data cannot be sent by the client.',
-    'remainingStockUpdate'          =>  'You cannot update the remaining_stock value.'
+    'remainingStockUpdate'          =>  'You cannot update the remaining_stock value.',
+    'notValidDraw'                  =>  'The specified draw is not valid.'
 ];

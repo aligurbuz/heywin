@@ -28,7 +28,7 @@ trait DrawsPropertyHandlerTrait
 	 *
 	 * @var array
 	 */
-	protected array $hitter = [];
+	protected array $hitter = ['remaining_stock'];
 
 	/**
 	 * denied eager loadings values for repository
