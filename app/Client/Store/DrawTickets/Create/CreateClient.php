@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Client\Store\DrawTickets\Create;
 
@@ -18,7 +18,7 @@ class CreateClient extends Client
 	 *
 	 * @var array
 	 */
-	protected array $capsule = [];
+	protected array $capsule = ['amount'];
 
 	/**
 	 * get model entity validation
@@ -32,5 +32,7 @@ class CreateClient extends Client
 	 *
 	 * @var array
 	 */
-	protected array $rule = [];
+	protected array $rule = [
+        'amount' => 'required|integer'
+    ];
 }

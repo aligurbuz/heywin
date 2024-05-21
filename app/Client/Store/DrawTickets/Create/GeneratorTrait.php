@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-namespace App\Client\Store\DrawTickets\Create; 
+namespace App\Client\Store\DrawTickets\Create;
 
 trait GeneratorTrait
 {
@@ -9,14 +9,14 @@ trait GeneratorTrait
 	 *
 	 * @return array
 	 */
-	protected array $generators = ['ticket_code'];
+	protected array $generators = ['ticket_code','number','ticket_status'];
 
 	/**
 	 * get dont overwrite generator for client
 	 *
 	 * @return array
 	 */
-	protected array $dontOverWriteGenerators = ['ticket_code'];
+	protected array $dontOverWriteGenerators = ['ticket_code','number','ticket_status'];
 
 
 	/**
@@ -28,4 +28,24 @@ trait GeneratorTrait
 	{
 		return generateHash();
 	}
+
+    /**
+     * generates number for client
+     *
+     * @return string
+     */
+    public function numberGenerator(): string
+    {
+        return md5(time());
+    }
+
+    /**
+     * generates ticket status for client
+     *
+     * @return int
+     */
+    public function ticketStatusGenerator(): int
+    {
+        return 0;
+    }
 }
