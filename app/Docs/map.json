@@ -18,7 +18,8 @@
         "/Users/teamprocure/Desktop/apps/api/app/Docs/Endpoints/Definition/Definition.json",
         "/Users/teamprocure/Desktop/apps/api/app/Docs/Endpoints/Customer/Customer.json",
         "/var/www/html/app/heywin/app/Docs/Endpoints/Store/Store.json",
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json"
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json",
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json"
     ],
     "keys": {
         "/var/www/html/app/api/app/Docs/Endpoints/User/User.json": 0,
@@ -37,7 +38,8 @@
         "/Users/teamprocure/Desktop/apps/api/app/Docs/Endpoints/Definition/Definition.json": 0,
         "/Users/teamprocure/Desktop/apps/api/app/Docs/Endpoints/Customer/Customer.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Store/Store.json": 6,
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json": 0
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json": 0,
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json": 0
     },
     "fingerPrints": {
         "User_User_user": 0,
@@ -70,6 +72,7 @@
         "Product_Images_productImage": 0,
         "Draws_Store_draw": 4,
         "DrawCountries_Store_drawCountry": 5,
-        "DrawTickets_Store_ticket": 6
+        "DrawTickets_Store_ticket": 6,
+        "Orders_Orders_order": 0
     }
 }

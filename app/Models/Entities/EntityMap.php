@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return Order
+     */
+    public function order(object $query) : Order
+    {
+        return new Order($query);
+    }
+    
+    /**
+     * @param object $query
      * @return Ticket
      */
     public function ticket(object $query) : Ticket

@@ -2350,6 +2350,171 @@
             "name": "Localizations"
         },
         {
+            "name": "Orders",
+            "item": [
+                {
+                    "name": "Orders",
+                    "item": [
+                        {
+                            "name": "Orders",
+                            "response": [],
+                            "request": {
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Bearer {{bearerToken}}",
+                                        "type": "text",
+                                        "description": "It is the token value received after the user logs in.(must)"
+                                    },
+                                    {
+                                        "key": "Apikey",
+                                        "value": "{{apiKey}}",
+                                        "type": "text",
+                                        "description": "It is a hash value given to you by the system provider.(must)"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "{{contentType}}",
+                                        "type": "text",
+                                        "description": "You can specify the return types for the returned response like json or xml.(not must)"
+                                    },
+                                    {
+                                        "key": "Accept-Language",
+                                        "value": "{{acceptLanguage}}",
+                                        "type": "text",
+                                        "description": "You can select the language option for the returned string values.(must)"
+                                    }
+                                ],
+                                "body": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/orders",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "orders"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "range",
+                                            "value": "desc",
+                                            "description": "",
+                                            "disabled": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "Orders",
+                            "response": [],
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Bearer {{bearerToken}}",
+                                        "type": "text",
+                                        "description": "It is the token value received after the user logs in.(must)"
+                                    },
+                                    {
+                                        "key": "Apikey",
+                                        "value": "{{apiKey}}",
+                                        "type": "text",
+                                        "description": "It is a hash value given to you by the system provider.(must)"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "{{contentType}}",
+                                        "type": "text",
+                                        "description": "You can specify the return types for the returned response like json or xml.(not must)"
+                                    },
+                                    {
+                                        "key": "Accept-Language",
+                                        "value": "{{acceptLanguage}}",
+                                        "type": "text",
+                                        "description": "You can select the language option for the returned string values.(must)"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\"customer_code\":\"integer\",\"customer_contact_code\":\"integer\",\"is_deleted\":\"0\",\"order_type\":\"enum\",\"shipping_tracking_number\":\"string\",\"status\":\"1\"}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/orders",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "orders"
+                                    ],
+                                    "query": []
+                                }
+                            }
+                        },
+                        {
+                            "name": "Orders",
+                            "response": [],
+                            "request": {
+                                "method": "PUT",
+                                "header": [
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Bearer {{bearerToken}}",
+                                        "type": "text",
+                                        "description": "It is the token value received after the user logs in.(must)"
+                                    },
+                                    {
+                                        "key": "Apikey",
+                                        "value": "{{apiKey}}",
+                                        "type": "text",
+                                        "description": "It is a hash value given to you by the system provider.(must)"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "{{contentType}}",
+                                        "type": "text",
+                                        "description": "You can specify the return types for the returned response like json or xml.(not must)"
+                                    },
+                                    {
+                                        "key": "Accept-Language",
+                                        "value": "{{acceptLanguage}}",
+                                        "type": "text",
+                                        "description": "You can select the language option for the returned string values.(must)"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\"customer_code\":\"integer\",\"customer_contact_code\":\"integer\",\"is_deleted\":\"0\",\"order_code\":\"0\",\"order_type\":\"enum\",\"shipping_tracking_number\":\"string\",\"status\":\"1\"}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/orders",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "orders"
+                                    ],
+                                    "query": []
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "item": [
                 {
                     "name": "Changes",

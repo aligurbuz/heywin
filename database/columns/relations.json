@@ -25,6 +25,7 @@
         "Gender",
         "Language",
         "Localization",
+        "Order",
         "PasswordChange",
         "Permission",
         "Product",
@@ -77,8 +78,9 @@
         "CustomerContact",
         "CustomerGender",
         "CustomerImage",
+        "Ticket",
         "Localization",
-        "Ticket"
+        "Order"
     ],
     "CustomerAge": [
         "Customer",
@@ -86,7 +88,8 @@
     ],
     "CustomerContact": [
         "Customer",
-        "Localization"
+        "Localization",
+        "Order"
     ],
     "CustomerGender": [
         "Customer",
@@ -97,19 +100,26 @@
         "Customer",
         "Localization"
     ],
+    "Ticket": [
+        "Customer",
+        "Draw",
+        "Product",
+        "Localization"
+    ],
     "Gender": [
         "CustomerGender",
         "Localization"
     ],
     "Draw": [
         "DrawCountry",
+        "Ticket",
         "Product",
-        "Localization",
-        "Ticket"
+        "Localization"
     ],
     "Product": [
         "Draw",
         "DrawCountry",
+        "Ticket",
         "ProductCategory",
         "ProductCurrency",
         "ProductImage",
@@ -119,6 +129,11 @@
         "Localization"
     ],
     "Language": [
+        "Localization"
+    ],
+    "Order": [
+        "Customer",
+        "CustomerContact",
         "Localization"
     ],
     "PasswordChange": [
@@ -150,11 +165,6 @@
         "Localization"
     ],
     "TableChange": [
-        "Localization"
-    ],
-    "Ticket": [
-        "Customer",
-        "Draw",
         "Localization"
     ],
     "Timezone": [

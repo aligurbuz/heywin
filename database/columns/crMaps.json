@@ -230,5 +230,17 @@
     "store.drawTickets.update": {
         "class": "App\\Client\\Store\\DrawTickets\\Update\\UpdateClient",
         "model": "ticket"
+    },
+    "orders.orders.get": {
+        "class": "App\\Client\\Orders\\Orders\\Get\\GetClient",
+        "model": "order"
+    },
+    "orders.orders.create": {
+        "class": "App\\Client\\Orders\\Orders\\Create\\CreateClient",
+        "model": "order"
+    },
+    "orders.orders.update": {
+        "class": "App\\Client\\Orders\\Orders\\Update\\UpdateClient",
+        "model": "order"
     }
 }

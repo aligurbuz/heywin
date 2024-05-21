@@ -32,13 +32,15 @@
         "CustomerContact",
         "CustomerGender",
         "CustomerImage",
+        "Order",
         "Ticket"
     ],
     "customer_age_code": [
         "CustomerAge"
     ],
     "customer_contact_code": [
-        "CustomerContact"
+        "CustomerContact",
+        "Order"
     ],
     "customer_gender_code": [
         "CustomerGender"
@@ -80,6 +82,9 @@
     ],
     "localized_code": [
         "Localization"
+    ],
+    "order_code": [
+        "Order"
     ],
     "password_change_code": [
         "PasswordChange"

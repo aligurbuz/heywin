@@ -122,5 +122,9 @@
     "Ticket": {
         "controller": "DrawTickets",
         "dir": "Store"
+    },
+    "Order": {
+        "controller": "Orders",
+        "dir": "Orders"
     }
 }

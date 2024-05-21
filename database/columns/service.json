@@ -120,5 +120,10 @@
         "controller": "DrawTickets",
         "dir": "Store",
         "model": "Ticket"
+    },
+    "Orders": {
+        "controller": "Orders",
+        "dir": "Orders",
+        "model": "Order"
     }
 }

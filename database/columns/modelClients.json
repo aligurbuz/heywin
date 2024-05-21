@@ -102,5 +102,10 @@
         "get": "App\\Client\\Store\\DrawTickets\\Get\\GetClient",
         "create": "App\\Client\\Store\\DrawTickets\\Create\\CreateClient",
         "update": "App\\Client\\Store\\DrawTickets\\Update\\UpdateClient"
+    },
+    "Order": {
+        "get": "App\\Client\\Orders\\Orders\\Get\\GetClient",
+        "create": "App\\Client\\Orders\\Orders\\Create\\CreateClient",
+        "update": "App\\Client\\Orders\\Orders\\Update\\UpdateClient"
     }
 }
