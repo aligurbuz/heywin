@@ -43,7 +43,7 @@
         "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json": 0,
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json": 0
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json": 5
     },
     "fingerPrints": {
         "User_User_user": 0,
