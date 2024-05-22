@@ -126,5 +126,9 @@
     "Order": {
         "controller": "Orders",
         "dir": "Orders"
+    },
+    "PaymentType": {
+        "controller": "Types",
+        "dir": "Payment"
     }
 }

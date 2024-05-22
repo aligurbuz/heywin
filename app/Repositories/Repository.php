@@ -27,6 +27,7 @@ use App\Repositories\Resources\Timezones\Contracts\TimezonesRepositoryContract;
 use App\Repositories\Resources\User\Contracts\PhotosRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserActivationsRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
+use App\Repositories\Resources\Payment\Contracts\PaymentTypesRepositoryContract;
 use App\Repositories\Resources\Orders\Contracts\OrdersRepositoryContract;
 use App\Repositories\Resources\Store\Contracts\StoreDrawTicketsRepositoryContract;
 use App\Repositories\Resources\Store\Contracts\StoreDrawCountriesRepositoryContract;
@@ -43,6 +44,16 @@ use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
  */
 class Repository
 {
+    /**
+     * get paymentType repository instance
+     *
+     * @return PaymentTypesRepositoryContract
+     */
+    public static function paymentType() : PaymentTypesRepositoryContract
+    {
+        return app()->get(PaymentTypesRepositoryContract::class);
+    }
+    
     /**
      * get order repository instance
      *

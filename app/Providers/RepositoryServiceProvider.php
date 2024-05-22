@@ -49,6 +49,8 @@ use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
 use App\Repositories\Resources\User\PhotosRepository;
 use App\Repositories\Resources\User\UserRepository;
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\Resources\Payment\Contracts\PaymentTypesRepositoryContract;
+use App\Repositories\Resources\Payment\TypesRepository as PaymentTypesRepository;
 use App\Repositories\Resources\Orders\Contracts\OrdersRepositoryContract;
 use App\Repositories\Resources\Orders\OrdersRepository as OrdersRepository;
 use App\Repositories\Resources\Store\Contracts\StoreDrawTicketsRepositoryContract;
@@ -110,6 +112,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(StoreDrawCountriesRepositoryContract::class,StoreDrawCountriesRepository::class);
         $this->app->bind(StoreDrawTicketsRepositoryContract::class,StoreDrawTicketsRepository::class);
         $this->app->bind(OrdersRepositoryContract::class,OrdersRepository::class);
+        $this->app->bind(PaymentTypesRepositoryContract::class,PaymentTypesRepository::class);
         //newBind
     }
 

@@ -242,5 +242,17 @@
     "orders.orders.update": {
         "class": "App\\Client\\Orders\\Orders\\Update\\UpdateClient",
         "model": "order"
+    },
+    "payment.types.get": {
+        "class": "App\\Client\\Payment\\Types\\Get\\GetClient",
+        "model": "paymentType"
+    },
+    "payment.types.create": {
+        "class": "App\\Client\\Payment\\Types\\Create\\CreateClient",
+        "model": "paymentType"
+    },
+    "payment.types.update": {
+        "class": "App\\Client\\Payment\\Types\\Update\\UpdateClient",
+        "model": "paymentType"
     }
 }

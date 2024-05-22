@@ -107,5 +107,10 @@
         "get": "App\\Client\\Orders\\Orders\\Get\\GetClient",
         "create": "App\\Client\\Orders\\Orders\\Create\\CreateClient",
         "update": "App\\Client\\Orders\\Orders\\Update\\UpdateClient"
+    },
+    "PaymentType": {
+        "get": "App\\Client\\Payment\\Types\\Get\\GetClient",
+        "create": "App\\Client\\Payment\\Types\\Create\\CreateClient",
+        "update": "App\\Client\\Payment\\Types\\Update\\UpdateClient"
     }
 }

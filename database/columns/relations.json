@@ -27,6 +27,7 @@
         "Localization",
         "Order",
         "PasswordChange",
+        "PaymentType",
         "Permission",
         "Product",
         "ProductCategory",
@@ -76,11 +77,11 @@
     "Customer": [
         "CustomerAge",
         "CustomerContact",
+        "Order",
         "CustomerGender",
         "CustomerImage",
         "Ticket",
-        "Localization",
-        "Order"
+        "Localization"
     ],
     "CustomerAge": [
         "Customer",
@@ -88,8 +89,13 @@
     ],
     "CustomerContact": [
         "Customer",
-        "Localization",
-        "Order"
+        "Order",
+        "Localization"
+    ],
+    "Order": [
+        "Customer",
+        "CustomerContact",
+        "Localization"
     ],
     "CustomerGender": [
         "Customer",
@@ -131,12 +137,10 @@
     "Language": [
         "Localization"
     ],
-    "Order": [
-        "Customer",
-        "CustomerContact",
+    "PasswordChange": [
         "Localization"
     ],
-    "PasswordChange": [
+    "PaymentType": [
         "Localization"
     ],
     "Permission": [

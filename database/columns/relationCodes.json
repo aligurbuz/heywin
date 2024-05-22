@@ -89,6 +89,9 @@
     "password_change_code": [
         "PasswordChange"
     ],
+    "payment_type_code": [
+        "PaymentType"
+    ],
     "permission_code": [
         "Permission"
     ],
