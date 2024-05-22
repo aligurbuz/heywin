@@ -254,5 +254,17 @@
     "payment.types.update": {
         "class": "App\\Client\\Payment\\Types\\Update\\UpdateClient",
         "model": "paymentType"
+    },
+    "customer.balances.get": {
+        "class": "App\\Client\\Customer\\Balances\\Get\\GetClient",
+        "model": "customerBalance"
+    },
+    "customer.balances.create": {
+        "class": "App\\Client\\Customer\\Balances\\Create\\CreateClient",
+        "model": "customerBalance"
+    },
+    "customer.balances.update": {
+        "class": "App\\Client\\Customer\\Balances\\Update\\UpdateClient",
+        "model": "customerBalance"
     }
 }

@@ -24,11 +24,13 @@
     ],
     "currency_code": [
         "Currency",
+        "CustomerBalance",
         "ProductCurrency"
     ],
     "customer_code": [
         "Customer",
         "CustomerAge",
+        "CustomerBalance",
         "CustomerContact",
         "CustomerGender",
         "CustomerImage",
@@ -37,6 +39,13 @@
     ],
     "customer_age_code": [
         "CustomerAge"
+    ],
+    "customer_balance_code": [
+        "CustomerBalance"
+    ],
+    "payment_type_code": [
+        "CustomerBalance",
+        "PaymentType"
     ],
     "customer_contact_code": [
         "CustomerContact",
@@ -88,9 +97,6 @@
     ],
     "password_change_code": [
         "PasswordChange"
-    ],
-    "payment_type_code": [
-        "PaymentType"
     ],
     "permission_code": [
         "Permission"

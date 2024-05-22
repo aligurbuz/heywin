@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\Customer\BalancesController;
 use App\Http\Controllers\Api\Customer\ContactsController;
 use App\Http\Controllers\Api\Customer\ImagesController;
 use App\Http\Controllers\Api\Customer\AgesController;
@@ -28,4 +29,8 @@ Route::prefix('customer')->group(function(){
     Route::get('/contacts', [ContactsController::class,'get']);
     Route::post('/contacts', [ContactsController::class,'create']);
     Route::put('/contacts', [ContactsController::class,'update']);
+
+    Route::get('/balances', [BalancesController::class,'get']);
+    Route::post('/balances', [BalancesController::class,'create']);
+    Route::put('/balances', [BalancesController::class,'update']);
 });

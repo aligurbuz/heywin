@@ -20,7 +20,8 @@
         "/var/www/html/app/heywin/app/Docs/Endpoints/Store/Store.json",
         "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json",
         "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json",
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json"
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json",
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json"
     ],
     "keys": {
         "/var/www/html/app/api/app/Docs/Endpoints/User/User.json": 0,
@@ -41,7 +42,8 @@
         "/var/www/html/app/heywin/app/Docs/Endpoints/Store/Store.json": 6,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json": 0,
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json": 0
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json": 0,
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json": 0
     },
     "fingerPrints": {
         "User_User_user": 0,
@@ -76,6 +78,7 @@
         "DrawCountries_Store_drawCountry": 5,
         "DrawTickets_Store_ticket": 6,
         "Orders_Orders_order": 0,
-        "Types_Payment_paymentType": 0
+        "Types_Payment_paymentType": 0,
+        "Balances_Customer_customerBalance": 0
     }
 }

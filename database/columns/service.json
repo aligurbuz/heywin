@@ -130,5 +130,10 @@
         "controller": "Types",
         "dir": "Payment",
         "model": "PaymentType"
+    },
+    "Customer/balances": {
+        "controller": "Balances",
+        "dir": "Customer",
+        "model": "CustomerBalance"
     }
 }

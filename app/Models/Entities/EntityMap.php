@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return CustomerBalance
+     */
+    public function customerBalance(object $query) : CustomerBalance
+    {
+        return new CustomerBalance($query);
+    }
+    
+    /**
+     * @param object $query
      * @return PaymentType
      */
     public function paymentType(object $query) : PaymentType

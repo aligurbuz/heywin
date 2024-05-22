@@ -112,5 +112,10 @@
         "get": "App\\Client\\Payment\\Types\\Get\\GetClient",
         "create": "App\\Client\\Payment\\Types\\Create\\CreateClient",
         "update": "App\\Client\\Payment\\Types\\Update\\UpdateClient"
+    },
+    "CustomerBalance": {
+        "get": "App\\Client\\Customer\\Balances\\Get\\GetClient",
+        "create": "App\\Client\\Customer\\Balances\\Create\\CreateClient",
+        "update": "App\\Client\\Customer\\Balances\\Update\\UpdateClient"
     }
 }

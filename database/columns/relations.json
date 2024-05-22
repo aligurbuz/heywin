@@ -15,6 +15,7 @@
         "Currency",
         "Customer",
         "CustomerAge",
+        "CustomerBalance",
         "CustomerContact",
         "CustomerGender",
         "CustomerImage",
@@ -67,7 +68,8 @@
     ],
     "Currency": [
         "ProductCurrency",
-        "Localization"
+        "Localization",
+        "CustomerBalance"
     ],
     "ProductCurrency": [
         "Currency",
@@ -81,7 +83,8 @@
         "CustomerGender",
         "CustomerImage",
         "Ticket",
-        "Localization"
+        "Localization",
+        "CustomerBalance"
     ],
     "CustomerAge": [
         "Customer",
@@ -112,6 +115,16 @@
         "Product",
         "Localization"
     ],
+    "CustomerBalance": [
+        "Currency",
+        "Customer",
+        "PaymentType",
+        "Localization"
+    ],
+    "PaymentType": [
+        "CustomerBalance",
+        "Localization"
+    ],
     "Gender": [
         "CustomerGender",
         "Localization"
@@ -138,9 +151,6 @@
         "Localization"
     ],
     "PasswordChange": [
-        "Localization"
-    ],
-    "PaymentType": [
         "Localization"
     ],
     "Permission": [
