@@ -7,11 +7,12 @@ return [
         'currencies/*' => ['GET'],
         'customer/profiles' => ['POST'],
         'global' => ['GET','POST'],
-        //'password/changes' => ['GET','POST'],
+        'store/draws' => ['GET'],
         //'timezones' => ['GET'],
     ],
     'authenticateWeb' => [
         'customer/profiles' => ['GET','PUT'],
+        'store/drawTickets' => ['GET','PUT','POST'],
         'logout' => ['POST'],
     ]
 ];

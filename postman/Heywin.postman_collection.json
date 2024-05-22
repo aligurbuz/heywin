@@ -3486,7 +3486,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"description\": \"asasa\",\n    \"draw_date\": \"2024-11-11 00:00:00\",\n    \"end_date\": \"2024-11-11 00:00:00\",\n    \"image_url\": \"string\",\n    \"is_auto_draw\": \"0\",\n    \"max_ticket\": \"0\",\n    \"name\": \"ssasas\",\n    \"price\": \"100\",\n    \"product_code\": 1211926719,\n    \"start_date\": \"2024-11-11 00:00:00\",\n    \"stock\": \"0\",\n    \"video_url\": \"string\",\n    \"winner_count\": \"1\",\n    \"country\": [\n        {\n            \"country_code\": 3310308172\n        }\n    ]\n}",
+                                    "raw": "{\n    \"description\": \"asasa\",\n    \"product_code\": 1211926719,\n    \"name\": \"ssasas\",\n    \"price\": \"100\",\n    \"start_date\": \"2024-11-11 00:00:00\",\n    \"end_date\": \"2024-11-11 00:00:00\",\n    \"draw_date\": \"2024-11-11 00:00:00\",\n    \"image_url\": \"string\",\n    \"is_auto_draw\": \"0\",\n    \"max_ticket\": \"0\",\n    \"stock\": \"0\",\n    \"video_url\": \"string\",\n    \"winner_count\": \"1\",\n    \"country\": [\n        {\n            \"country_code\": 3310308172\n        }\n    ]\n}",
                                     "options": {
                                         "raw": {
                                             "language": "json"
