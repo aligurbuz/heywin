@@ -2997,7 +2997,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\"is_deleted\":\"0\",\"name\":\"string\",\"parent\":\"0\",\"sequence\":\"1\",\"sequence_time\":\"0\",\"status\":\"1\"}",
+                                    "raw": "{\n    \"name\": \"Car\",\n    \"sequence\": 1\n}",
                                     "options": {
                                         "raw": {
                                             "language": "json"

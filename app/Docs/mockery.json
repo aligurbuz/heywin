@@ -23,5 +23,10 @@
         "body": {
             "raw": "{\n    \"description\": \"Test\",\n    \"is_digital\": \"0\",\n    \"name\": \"Foex\",\n    \"price\": 50.67,\n    \"status\": \"1\",\n    \"category\" : [\n        {\n            \"category_code\" : 2715346355\n        }\n    ]\n}"
         }
+    },
+    "POST_Store/Categories" : {
+        "body": {
+            "raw": "{\n    \"name\": \"Car\",\n    \"sequence\": 1\n}"
+        }
     }
 }
