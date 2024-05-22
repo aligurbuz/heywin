@@ -13,19 +13,10 @@ trait BeforeUpdate
      *
      * @param array $clientData
      * @param array $oldData
-     * @return array
+     * @return void
      */
-    public function eventFireBeforeUpdate(array $clientData = [], array $oldData = []): array
+    public function eventFireBeforeUpdate(array $clientData = [], array $oldData = []): void
     {
-        if (($oldData['stock'] > $oldData['remaining_stock']) && $oldData['stock'] > $clientData['stock']) {
-            Exception::customException('oldStock', ['oldstock' => $oldData['stock']]);
-        }
-
-        if (($oldData['stock'] > $oldData['remaining_stock']) && $oldData['stock'] < $clientData['stock']) {
-            $diff = $clientData['stock'] - $oldData['stock'];
-            $clientData['remaining_stock'] = $oldData['remaining_stock'] + $diff;
-        }
-
-        return $clientData;
+        //
     }
 }
