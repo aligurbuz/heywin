@@ -63,5 +63,9 @@ return [
     'userOwnPassive'                =>  'The user cannot make passive self.',
     'emailVerifiedAt'               =>  'Email_verified_at data cannot be sent by the client.',
     'remainingStockUpdate'          =>  'You cannot update the remaining_stock value.',
-    'notValidDraw'                  =>  'The specified draw is not valid.'
+    'notValidDraw'                  =>  'The specified draw is not valid.',
+    'startDatePast'                 =>  'The specified start_date cannot be earlier than the current datetime.',
+    'endDatePast'                   =>  'End_date cannot be less than or equal to the start_date time period. End_date must be greater than the start_date time period.',
+    'drawDatePast'                  =>  'Your draw_date time period cannot be less than end_date time period.',
+    'oldStock'                      =>  'Tickets have been sold for this draw. The stock value to be updated cannot be less than the registered stock value. (registered stock value: :oldstock) '
 ];
