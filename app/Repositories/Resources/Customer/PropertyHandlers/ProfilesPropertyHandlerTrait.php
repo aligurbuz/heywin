@@ -27,7 +27,7 @@ trait ProfilesPropertyHandlerTrait
      *
      * @var array
      */
-    protected array $hitter = [];
+    protected array $hitter = ['balance'];
 
     /**
      * denied eager loadings values for repository

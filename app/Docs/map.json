@@ -79,6 +79,6 @@
         "DrawTickets_Store_ticket": 6,
         "Orders_Orders_order": 0,
         "Types_Payment_paymentType": 0,
-        "Balances_Customer_customerBalance": 0
+        "Balances_Customer_customerBalance": 5
     }
 }

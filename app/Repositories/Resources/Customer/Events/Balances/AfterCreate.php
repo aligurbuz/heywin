@@ -1,8 +1,10 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace App\Repositories\Resources\Customer\Events\Balances;
+
+use App\Facades\Database\Customer\Customer;
 
 trait AfterCreate
 {
@@ -15,6 +17,6 @@ trait AfterCreate
 	 */
 	public function eventFireAfterCreate(array $result = [], array $clientData = []): void
 	{
-		//
+		Customer::increaseBalance($result['balance']);
 	}
 }

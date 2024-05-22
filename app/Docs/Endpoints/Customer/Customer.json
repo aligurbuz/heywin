@@ -1,10 +1,10 @@
 {
     "item": [
         {
-            "name": "Balances",
+            "name": "Profiles",
             "item": [
                 {
-                    "name": "Customer/Balances",
+                    "name": "Customer/Profiles",
                     "response": [],
                     "request": {
                         "method": "GET",
@@ -36,13 +36,13 @@
                         ],
                         "body": [],
                         "url": {
-                            "raw": "{{baseUrl}}/customer/balances",
+                            "raw": "{{baseUrl}}/customer/profiles",
                             "host": [
                                 "{{baseUrl}}"
                             ],
                             "path": [
                                 "customer",
-                                "balances"
+                                "profiles"
                             ],
                             "query": [
                                 {
@@ -56,7 +56,7 @@
                     }
                 },
                 {
-                    "name": "Customer/Balances",
+                    "name": "Customer/Profiles",
                     "response": [],
                     "request": {
                         "method": "POST",
@@ -88,7 +88,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"balance\":\"double\",\"currency_code\":\"integer\",\"customer_code\":\"integer\",\"is_deleted\":\"0\",\"payment_type_code\":\"integer\",\"status\":\"1\"}",
+                            "raw": "{\"balance\":\"0\",\"email\":\"string\",\"email_verified_at\":\"timestamp\",\"is_deleted\":\"0\",\"name\":\"string\",\"password\":\"string\",\"remember_token\":\"string\",\"status\":\"0\"}",
                             "options": {
                                 "raw": {
                                     "language": "json"
@@ -96,20 +96,20 @@
                             }
                         },
                         "url": {
-                            "raw": "{{baseUrl}}/customer/balances",
+                            "raw": "{{baseUrl}}/customer/profiles",
                             "host": [
                                 "{{baseUrl}}"
                             ],
                             "path": [
                                 "customer",
-                                "balances"
+                                "profiles"
                             ],
                             "query": []
                         }
                     }
                 },
                 {
-                    "name": "Customer/Balances",
+                    "name": "Customer/Profiles",
                     "response": [],
                     "request": {
                         "method": "PUT",
@@ -141,7 +141,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"balance\":\"double\",\"currency_code\":\"integer\",\"customer_balance_code\":\"0\",\"customer_code\":\"integer\",\"is_deleted\":\"0\",\"payment_type_code\":\"integer\",\"status\":\"1\"}",
+                            "raw": "{\"balance\":\"0\",\"customer_code\":\"integer\",\"email\":\"string\",\"email_verified_at\":\"timestamp\",\"is_deleted\":\"0\",\"name\":\"string\",\"password\":\"string\",\"remember_token\":\"string\",\"status\":\"1\"}",
                             "options": {
                                 "raw": {
                                     "language": "json"
@@ -149,13 +149,13 @@
                             }
                         },
                         "url": {
-                            "raw": "{{baseUrl}}/customer/balances",
+                            "raw": "{{baseUrl}}/customer/profiles",
                             "host": [
                                 "{{baseUrl}}"
                             ],
                             "path": [
                                 "customer",
-                                "balances"
+                                "profiles"
                             ],
                             "query": []
                         }

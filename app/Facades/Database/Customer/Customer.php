@@ -41,6 +41,15 @@ class Customer
     }
 
     /**
+     * @param float $balance
+     * @return object|array
+     */
+    public static function increaseBalance(float $balance): object|array
+    {
+        return Repository::customer()->increase('balance',$balance);
+    }
+
+    /**
      * get customer contact instance for facade
      *
      * @return Contact
