@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace App\Repositories\Resources\Store\Events\Draws;
 
-use App\Exceptions\Exception;
-
 trait BeforeUpdate
 {
     /**
