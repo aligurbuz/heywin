@@ -32,7 +32,7 @@ class Customer
     /**
      * @return string
      */
-    public static function getEmail() : string
+    public static function getEmail(): string
     {
         return (static::get())[0]['email'];
     }
@@ -54,7 +54,7 @@ class Customer
      */
     public static function increaseBalance(float $balance): object|array
     {
-        return Repository::customer()->increase('balance',$balance);
+        return Repository::customer()->increase('balance', $balance);
     }
 
     /**
