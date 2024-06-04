@@ -60,6 +60,7 @@ class Factory extends FactoryManager
         'Search' => 'ElasticSearch',
         'Sms' => 'Twilio',
         'Queue' => 'Rabbit',
+        'Payment' => 'Customer',
     ];
 
     /**
