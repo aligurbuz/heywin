@@ -28,5 +28,9 @@
         "body": {
             "raw": "{\n    \"name\": \"Car\",\n    \"sequence\": 1\n}"
         }
+    },"POST_Customer/Payments" : {
+        "body": {
+            "raw": "{\n    \"amount\": \"double\",\n    \"currency_code\": \"integer\"\n}"
+        }
     }
 }
