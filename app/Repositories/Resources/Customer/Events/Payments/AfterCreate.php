@@ -20,10 +20,7 @@ trait AfterCreate
     {
         $currency = Currency::get($result['currency_code']);
 
-        $factory = Factory::payment()->create([
-            'price_amount' => $result['amount'],
-            'price_currency' => $currency->symbol
-        ]);
+        $factory = $this->factoryPayment($result['amount'], $currency);
 
         $this->dataUpdate($result['customer_payment_code'], $factory);
 
@@ -52,5 +49,18 @@ trait AfterCreate
         Repository::customerPayment()
             ->code($customer_payment_code)
             ->update([['data' => $factory]]);
+    }
+
+    /**
+     * @param $amount
+     * @param \App\Models\Entities\Currency $currency
+     * @return array
+     */
+    private function factoryPayment($amount, \App\Models\Entities\Currency $currency): array
+    {
+        return Factory::payment()->create([
+            'price_amount' => $amount,
+            'price_currency' => $currency->symbol
+        ]);
     }
 }
