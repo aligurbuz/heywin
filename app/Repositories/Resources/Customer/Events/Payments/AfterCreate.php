@@ -26,7 +26,8 @@ trait AfterCreate
         ]);
 
         Repository::customerPayment()
-            ->code($result['customer_payment_code'])->update([['data' => $factory]]);
+            ->code($result['customer_payment_code'])
+            ->update([['data' => $factory]]);
 
         $result['complete_payment_link'] = $factory['invoice_url'].'&paymentId='.$factory['iPayment']['payment_id'];
 
