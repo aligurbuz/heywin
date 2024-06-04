@@ -25,12 +25,32 @@ trait AfterCreate
             'price_currency' => $currency->symbol
         ]);
 
+        $this->dataUpdate($result['customer_payment_code'], $factory);
+
+        return $this->result($factory, $result);
+    }
+
+    /**
+     * @param array $factory
+     * @param array $result
+     * @return array|array[]
+     */
+    private function result(array $factory, array $result): array
+    {
+        $result['complete_payment_link'] = $factory['invoice_url'] . '&paymentId=' . $factory['iPayment']['payment_id'];
+
+        return array_merge($result, ['data' => $factory]);
+    }
+
+    /**
+     * @param $customer_payment_code
+     * @param array $factory
+     * @return void
+     */
+    private function dataUpdate($customer_payment_code, array $factory): void
+    {
         Repository::customerPayment()
-            ->code($result['customer_payment_code'])
+            ->code($customer_payment_code)
             ->update([['data' => $factory]]);
-
-        $result['complete_payment_link'] = $factory['invoice_url'].'&paymentId='.$factory['iPayment']['payment_id'];
-
-        return array_merge($result,['data' => $factory]);
     }
 }
