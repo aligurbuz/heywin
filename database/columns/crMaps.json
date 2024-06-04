@@ -266,5 +266,17 @@
     "customer.balances.update": {
         "class": "App\\Client\\Customer\\Balances\\Update\\UpdateClient",
         "model": "customerBalance"
+    },
+    "front.langs.get": {
+        "class": "App\\Client\\Front\\Langs\\Get\\GetClient",
+        "model": "frontLang"
+    },
+    "front.langs.create": {
+        "class": "App\\Client\\Front\\Langs\\Create\\CreateClient",
+        "model": "frontLang"
+    },
+    "front.langs.update": {
+        "class": "App\\Client\\Front\\Langs\\Update\\UpdateClient",
+        "model": "frontLang"
     }
 }

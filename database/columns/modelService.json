@@ -134,5 +134,9 @@
     "CustomerBalance": {
         "controller": "Balances",
         "dir": "Customer"
+    },
+    "FrontLang": {
+        "controller": "Langs",
+        "dir": "Front"
     }
 }

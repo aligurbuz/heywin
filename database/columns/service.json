@@ -135,5 +135,10 @@
         "controller": "Balances",
         "dir": "Customer",
         "model": "CustomerBalance"
+    },
+    "Front/langs": {
+        "controller": "Langs",
+        "dir": "Front",
+        "model": "FrontLang"
     }
 }

@@ -23,6 +23,7 @@
         "Draw",
         "DrawCountry",
         "Excel",
+        "FrontLang",
         "Gender",
         "Language",
         "Localization",
@@ -147,7 +148,12 @@
     "Excel": [
         "Localization"
     ],
+    "FrontLang": [
+        "Language",
+        "Localization"
+    ],
     "Language": [
+        "FrontLang",
         "Localization"
     ],
     "PasswordChange": [

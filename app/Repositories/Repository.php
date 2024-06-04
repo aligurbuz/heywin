@@ -27,6 +27,7 @@ use App\Repositories\Resources\Timezones\Contracts\TimezonesRepositoryContract;
 use App\Repositories\Resources\User\Contracts\PhotosRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserActivationsRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
+use App\Repositories\Resources\Front\Contracts\FrontLangsRepositoryContract;
 use App\Repositories\Resources\Customer\Contracts\CustomerBalancesRepositoryContract;
 use App\Repositories\Resources\Payment\Contracts\PaymentTypesRepositoryContract;
 use App\Repositories\Resources\Orders\Contracts\OrdersRepositoryContract;
@@ -45,6 +46,16 @@ use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
  */
 class Repository
 {
+    /**
+     * get frontLang repository instance
+     *
+     * @return FrontLangsRepositoryContract
+     */
+    public static function frontLang() : FrontLangsRepositoryContract
+    {
+        return app()->get(FrontLangsRepositoryContract::class);
+    }
+    
     /**
      * get customerBalance repository instance
      *
