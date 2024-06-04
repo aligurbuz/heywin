@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return CustomerPayment
+     */
+    public function customerPayment(object $query) : CustomerPayment
+    {
+        return new CustomerPayment($query);
+    }
+    
+    /**
+     * @param object $query
      * @return FrontLang
      */
     public function frontLang(object $query) : FrontLang

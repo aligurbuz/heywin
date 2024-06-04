@@ -25,6 +25,7 @@
     "currency_code": [
         "Currency",
         "CustomerBalance",
+        "CustomerPayment",
         "ProductCurrency"
     ],
     "customer_code": [
@@ -60,6 +61,9 @@
     ],
     "customer_image_code": [
         "CustomerImage"
+    ],
+    "customer_payment_code": [
+        "CustomerPayment"
     ],
     "district_code": [
         "District"

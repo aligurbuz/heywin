@@ -138,5 +138,9 @@
     "FrontLang": {
         "controller": "Langs",
         "dir": "Front"
+    },
+    "CustomerPayment": {
+        "controller": "Payments",
+        "dir": "Customer"
     }
 }

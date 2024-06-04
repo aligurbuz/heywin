@@ -19,6 +19,7 @@
         "CustomerContact",
         "CustomerGender",
         "CustomerImage",
+        "CustomerPayment",
         "District",
         "Draw",
         "DrawCountry",
@@ -70,7 +71,8 @@
     "Currency": [
         "CustomerBalance",
         "ProductCurrency",
-        "Localization"
+        "Localization",
+        "CustomerPayment"
     ],
     "CustomerBalance": [
         "Currency",
@@ -128,6 +130,10 @@
     ],
     "Gender": [
         "CustomerGender",
+        "Localization"
+    ],
+    "CustomerPayment": [
+        "Currency",
         "Localization"
     ],
     "Draw": [

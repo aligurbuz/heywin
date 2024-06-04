@@ -122,5 +122,10 @@
         "get": "App\\Client\\Front\\Langs\\Get\\GetClient",
         "create": "App\\Client\\Front\\Langs\\Create\\CreateClient",
         "update": "App\\Client\\Front\\Langs\\Update\\UpdateClient"
+    },
+    "CustomerPayment": {
+        "get": "App\\Client\\Customer\\Payments\\Get\\GetClient",
+        "create": "App\\Client\\Customer\\Payments\\Create\\CreateClient",
+        "update": "App\\Client\\Customer\\Payments\\Update\\UpdateClient"
     }
 }

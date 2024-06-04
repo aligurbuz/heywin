@@ -140,5 +140,10 @@
         "controller": "Langs",
         "dir": "Front",
         "model": "FrontLang"
+    },
+    "Customer/payments": {
+        "controller": "Payments",
+        "dir": "Customer",
+        "model": "CustomerPayment"
     }
 }

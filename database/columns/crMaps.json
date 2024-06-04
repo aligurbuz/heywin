@@ -278,5 +278,17 @@
     "front.langs.update": {
         "class": "App\\Client\\Front\\Langs\\Update\\UpdateClient",
         "model": "frontLang"
+    },
+    "customer.payments.get": {
+        "class": "App\\Client\\Customer\\Payments\\Get\\GetClient",
+        "model": "customerPayment"
+    },
+    "customer.payments.create": {
+        "class": "App\\Client\\Customer\\Payments\\Create\\CreateClient",
+        "model": "customerPayment"
+    },
+    "customer.payments.update": {
+        "class": "App\\Client\\Customer\\Payments\\Update\\UpdateClient",
+        "model": "customerPayment"
     }
 }
