@@ -290,5 +290,17 @@
     "customer.payments.update": {
         "class": "App\\Client\\Customer\\Payments\\Update\\UpdateClient",
         "model": "customerPayment"
+    },
+    "customer.referers.get": {
+        "class": "App\\Client\\Customer\\Referers\\Get\\GetClient",
+        "model": "customerReferer"
+    },
+    "customer.referers.create": {
+        "class": "App\\Client\\Customer\\Referers\\Create\\CreateClient",
+        "model": "customerReferer"
+    },
+    "customer.referers.update": {
+        "class": "App\\Client\\Customer\\Referers\\Update\\UpdateClient",
+        "model": "customerReferer"
     }
 }

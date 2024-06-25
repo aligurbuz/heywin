@@ -44,7 +44,7 @@
         "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json": 0,
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json": 6,
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json": 7,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Front/Front.json": 0
     },
     "fingerPrints": {
@@ -83,6 +83,7 @@
         "Types_Payment_paymentType": 0,
         "Balances_Customer_customerBalance": 5,
         "Langs_Front_frontLang": 0,
-        "Payments_Customer_customerPayment": 6
+        "Payments_Customer_customerPayment": 6,
+        "Referers_Customer_customerReferer": 7
     }
 }

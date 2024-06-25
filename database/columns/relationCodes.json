@@ -35,6 +35,7 @@
         "CustomerContact",
         "CustomerGender",
         "CustomerImage",
+        "CustomerReferer",
         "Order",
         "Ticket"
     ],
@@ -64,6 +65,12 @@
     ],
     "customer_payment_code": [
         "CustomerPayment"
+    ],
+    "customer_referer_code": [
+        "CustomerReferer"
+    ],
+    "customer_friend_code": [
+        "CustomerReferer"
     ],
     "district_code": [
         "District"

@@ -20,6 +20,7 @@
         "CustomerGender",
         "CustomerImage",
         "CustomerPayment",
+        "CustomerReferer",
         "District",
         "Draw",
         "DrawCountry",
@@ -70,14 +71,18 @@
     ],
     "Currency": [
         "CustomerBalance",
+        "CustomerPayment",
         "ProductCurrency",
-        "Localization",
-        "CustomerPayment"
+        "Localization"
     ],
     "CustomerBalance": [
         "Currency",
         "Customer",
         "PaymentType",
+        "Localization"
+    ],
+    "CustomerPayment": [
+        "Currency",
         "Localization"
     ],
     "ProductCurrency": [
@@ -93,7 +98,8 @@
         "CustomerGender",
         "CustomerImage",
         "Ticket",
-        "Localization"
+        "Localization",
+        "CustomerReferer"
     ],
     "CustomerAge": [
         "Customer",
@@ -132,8 +138,8 @@
         "CustomerGender",
         "Localization"
     ],
-    "CustomerPayment": [
-        "Currency",
+    "CustomerReferer": [
+        "Customer",
         "Localization"
     ],
     "Draw": [

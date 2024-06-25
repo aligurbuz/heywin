@@ -127,5 +127,10 @@
         "get": "App\\Client\\Customer\\Payments\\Get\\GetClient",
         "create": "App\\Client\\Customer\\Payments\\Create\\CreateClient",
         "update": "App\\Client\\Customer\\Payments\\Update\\UpdateClient"
+    },
+    "CustomerReferer": {
+        "get": "App\\Client\\Customer\\Referers\\Get\\GetClient",
+        "create": "App\\Client\\Customer\\Referers\\Create\\CreateClient",
+        "update": "App\\Client\\Customer\\Referers\\Update\\UpdateClient"
     }
 }

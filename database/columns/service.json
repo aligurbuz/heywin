@@ -145,5 +145,10 @@
         "controller": "Payments",
         "dir": "Customer",
         "model": "CustomerPayment"
+    },
+    "Customer/referers": {
+        "controller": "Referers",
+        "dir": "Customer",
+        "model": "CustomerReferer"
     }
 }

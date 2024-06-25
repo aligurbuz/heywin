@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return CustomerReferer
+     */
+    public function customerReferer(object $query) : CustomerReferer
+    {
+        return new CustomerReferer($query);
+    }
+    
+    /**
+     * @param object $query
      * @return CustomerPayment
      */
     public function customerPayment(object $query) : CustomerPayment

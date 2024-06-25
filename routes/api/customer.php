@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\Customer\ReferersController;
 use App\Http\Controllers\Api\Customer\PaymentsController;
 use App\Http\Controllers\Api\Customer\BalancesController;
 use App\Http\Controllers\Api\Customer\ContactsController;
@@ -38,4 +39,8 @@ Route::prefix('customer')->group(function(){
     Route::get('/payments', [PaymentsController::class,'get']);
     Route::post('/payments', [PaymentsController::class,'create']);
     Route::put('/payments', [PaymentsController::class,'update']);
+
+    Route::get('/referers', [ReferersController::class,'get']);
+    Route::post('/referers', [ReferersController::class,'create']);
+    Route::put('/referers', [ReferersController::class,'update']);
 });
