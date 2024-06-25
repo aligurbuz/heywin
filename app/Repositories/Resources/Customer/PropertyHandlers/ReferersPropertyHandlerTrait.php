@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -25,7 +25,7 @@ trait ReferersPropertyHandlerTrait
 	 *
 	 * @var array
 	 */
-	protected array $hitter = [];
+	protected array $hitter = ['gain'];
 
 	/**
 	 * denied eager loadings values for repository
