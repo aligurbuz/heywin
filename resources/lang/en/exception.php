@@ -69,4 +69,6 @@ return [
     'drawDatePast'                  =>  'Your draw_date time period cannot be less than end_date time period.',
     'oldStock'                      =>  'Tickets have been sold for this draw. The stock value to be updated cannot be less than the registered stock value. (registered stock value: :oldstock) ',
     'customerPayment'               =>  ':exception',
+    'customerFriendCode'            => 'The specified customer_code does not exist. (code = :friend)',
+    'customerFriendCodeOwn'         => 'You cannot refer yourself.. (code = :friend)',
 ];

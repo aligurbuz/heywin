@@ -12,6 +12,7 @@ return [
     ],
     'authenticateWeb' => [
         'customer/profiles' => ['GET','PUT'],
+        'customer/referers' => ['GET','PUT','POST'],
         'customer/balances' => ['GET','POST','PUT'],
         'payment/types' => ['GET'],
         'store/drawTickets' => ['GET','PUT','POST'],
