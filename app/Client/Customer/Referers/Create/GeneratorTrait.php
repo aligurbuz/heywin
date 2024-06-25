@@ -3,6 +3,7 @@
 namespace App\Client\Customer\Referers\Create;
 
 use App\Exceptions\Exception;
+use App\Facades\Database\Customer\Referer;
 use App\Repositories\Repository;
 
 trait GeneratorTrait
@@ -14,7 +15,10 @@ trait GeneratorTrait
      */
     protected array $generators = [
         'customer_referer_code',
-        'customer_friend_code'
+        'customer_friend_code',
+        'level',
+        'percent',
+        'gain'
     ];
 
     /**
@@ -23,7 +27,10 @@ trait GeneratorTrait
      * @return array
      */
     protected array $dontOverWriteGenerators = [
-        'customer_referer_code'
+        'customer_referer_code',
+        'level',
+        'percent',
+        'gain'
     ];
 
 
@@ -35,6 +42,36 @@ trait GeneratorTrait
     public function customerRefererCodeGenerator(): int
     {
         return generateHash();
+    }
+
+    /**
+     * generates level for client
+     *
+     * @return string
+     */
+    public function levelGenerator(): string
+    {
+        return '1';
+    }
+
+    /**
+     * generates percent for client
+     *
+     * @return float
+     */
+    public function percentGenerator(): float
+    {
+        return Referer::$percents[1];
+    }
+
+    /**
+     * generates gain for client
+     *
+     * @return float
+     */
+    public function gainGenerator(): float
+    {
+        return 0;
     }
 
     /**
