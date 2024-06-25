@@ -10,7 +10,7 @@ class Product extends Model
 {
     use HasFactory,BaseManager;
 
-    protected array $searchable = [];
+    protected array $searchable = ['name'];
 
     protected array $withQuery = [];
 
