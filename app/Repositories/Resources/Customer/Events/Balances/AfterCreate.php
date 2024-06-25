@@ -21,13 +21,13 @@ trait AfterCreate
         $balance = (float)$result['balance'];
         Customer::increaseBalance($balance);
 
-        $refererParents = Repository::customerReferer()->instance(false)->where('customer_friend_code',$result['customer_code'])->get();
+        $refererParents = Repository::customerReferer()->instance(false)->where('customer_friend_code', $result['customer_code'])->get();
 
-        foreach ($refererParents as $refererParent){
+        foreach ($refererParents as $refererParent) {
             Customer::setCode($refererParent['customer_code']);
-            $percentage = ($balance/100) * $refererParent->percent;
+            $percentage = ($balance / 100) * $refererParent->percent;
             Customer::increaseBalance($percentage);
-            $refererParent->increment('gain',$percentage);
+            $refererParent->increment('gain', $percentage);
         }
     }
 }
