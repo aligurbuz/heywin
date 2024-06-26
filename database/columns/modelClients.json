@@ -137,5 +137,10 @@
         "get": "App\\Client\\Images\\Slider\\Get\\GetClient",
         "create": "App\\Client\\Images\\Slider\\Create\\CreateClient",
         "update": "App\\Client\\Images\\Slider\\Update\\UpdateClient"
+    },
+    "OrderComment": {
+        "get": "App\\Client\\Orders\\Comment\\Get\\GetClient",
+        "create": "App\\Client\\Orders\\Comment\\Create\\CreateClient",
+        "update": "App\\Client\\Orders\\Comment\\Update\\UpdateClient"
     }
 }

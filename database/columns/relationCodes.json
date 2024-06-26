@@ -83,6 +83,7 @@
     ],
     "product_code": [
         "Draw",
+        "OrderComment",
         "Product",
         "ProductCategory",
         "ProductCurrency",
@@ -109,7 +110,11 @@
         "Localization"
     ],
     "order_code": [
-        "Order"
+        "Order",
+        "OrderComment"
+    ],
+    "order_comment_code": [
+        "OrderComment"
     ],
     "password_change_code": [
         "PasswordChange"

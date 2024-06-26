@@ -150,5 +150,9 @@
     "Slider": {
         "controller": "Slider",
         "dir": "Images"
+    },
+    "OrderComment": {
+        "controller": "Comment",
+        "dir": "Orders"
     }
 }

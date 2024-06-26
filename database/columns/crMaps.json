@@ -314,5 +314,17 @@
     "images.slider.update": {
         "class": "App\\Client\\Images\\Slider\\Update\\UpdateClient",
         "model": "slider"
+    },
+    "orders.comment.get": {
+        "class": "App\\Client\\Orders\\Comment\\Get\\GetClient",
+        "model": "orderComment"
+    },
+    "orders.comment.create": {
+        "class": "App\\Client\\Orders\\Comment\\Create\\CreateClient",
+        "model": "orderComment"
+    },
+    "orders.comment.update": {
+        "class": "App\\Client\\Orders\\Comment\\Update\\UpdateClient",
+        "model": "orderComment"
     }
 }

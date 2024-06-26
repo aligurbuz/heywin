@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return OrderComment
+     */
+    public function orderComment(object $query) : OrderComment
+    {
+        return new OrderComment($query);
+    }
+    
+    /**
+     * @param object $query
      * @return Slider
      */
     public function slider(object $query) : Slider

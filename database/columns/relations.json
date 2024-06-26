@@ -30,6 +30,7 @@
         "Language",
         "Localization",
         "Order",
+        "OrderComment",
         "PasswordChange",
         "PaymentType",
         "Permission",
@@ -114,7 +115,8 @@
     "Order": [
         "Customer",
         "CustomerContact",
-        "Localization"
+        "Localization",
+        "OrderComment"
     ],
     "CustomerGender": [
         "Customer",
@@ -145,14 +147,21 @@
     ],
     "Draw": [
         "DrawCountry",
+        "Slider",
         "Ticket",
         "Product",
-        "Localization",
-        "Slider"
+        "Localization"
+    ],
+    "Slider": [
+        "Draw",
+        "Product",
+        "Localization"
     ],
     "Product": [
         "Draw",
+        "OrderComment",
         "DrawCountry",
+        "Slider",
         "Ticket",
         "ProductCategory",
         "ProductCurrency",
@@ -168,6 +177,11 @@
     ],
     "Language": [
         "FrontLang",
+        "Localization"
+    ],
+    "OrderComment": [
+        "Product",
+        "Order",
         "Localization"
     ],
     "PasswordChange": [
@@ -186,10 +200,6 @@
     "Role": [
         "Localization",
         "User"
-    ],
-    "Slider": [
-        "Draw",
-        "Localization"
     ],
     "SuperAdmin": [
         "User",

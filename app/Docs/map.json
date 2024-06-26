@@ -42,7 +42,7 @@
         "/Users/teamprocure/Desktop/apps/api/app/Docs/Endpoints/Customer/Customer.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Store/Store.json": 6,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Images/Images.json": 1,
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json": 0,
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json": 1,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json": 7,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Front/Front.json": 0
@@ -85,6 +85,7 @@
         "Langs_Front_frontLang": 0,
         "Payments_Customer_customerPayment": 6,
         "Referers_Customer_customerReferer": 7,
-        "Slider_Images_slider": 1
+        "Slider_Images_slider": 1,
+        "Comment_Orders_orderComment": 1
     }
 }
