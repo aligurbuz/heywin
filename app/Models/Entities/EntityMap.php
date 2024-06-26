@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return Slider
+     */
+    public function slider(object $query) : Slider
+    {
+        return new Slider($query);
+    }
+    
+    /**
+     * @param object $query
      * @return CustomerReferer
      */
     public function customerReferer(object $query) : CustomerReferer

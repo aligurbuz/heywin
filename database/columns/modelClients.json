@@ -132,5 +132,10 @@
         "get": "App\\Client\\Customer\\Referers\\Get\\GetClient",
         "create": "App\\Client\\Customer\\Referers\\Create\\CreateClient",
         "update": "App\\Client\\Customer\\Referers\\Update\\UpdateClient"
+    },
+    "Slider": {
+        "get": "App\\Client\\Images\\Slider\\Get\\GetClient",
+        "create": "App\\Client\\Images\\Slider\\Create\\CreateClient",
+        "update": "App\\Client\\Images\\Slider\\Update\\UpdateClient"
     }
 }

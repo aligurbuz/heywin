@@ -27,6 +27,7 @@ use App\Repositories\Resources\Timezones\Contracts\TimezonesRepositoryContract;
 use App\Repositories\Resources\User\Contracts\PhotosRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserActivationsRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
+use App\Repositories\Resources\Images\Contracts\ImagesSliderRepositoryContract;
 use App\Repositories\Resources\Customer\Contracts\CustomerReferersRepositoryContract;
 use App\Repositories\Resources\Customer\Contracts\CustomerPaymentsRepositoryContract;
 use App\Repositories\Resources\Front\Contracts\FrontLangsRepositoryContract;
@@ -48,6 +49,16 @@ use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
  */
 class Repository
 {
+    /**
+     * get slider repository instance
+     *
+     * @return ImagesSliderRepositoryContract
+     */
+    public static function slider() : ImagesSliderRepositoryContract
+    {
+        return app()->get(ImagesSliderRepositoryContract::class);
+    }
+    
     /**
      * get customerReferer repository instance
      *

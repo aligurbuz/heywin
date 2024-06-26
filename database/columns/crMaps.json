@@ -302,5 +302,17 @@
     "customer.referers.update": {
         "class": "App\\Client\\Customer\\Referers\\Update\\UpdateClient",
         "model": "customerReferer"
+    },
+    "images.slider.get": {
+        "class": "App\\Client\\Images\\Slider\\Get\\GetClient",
+        "model": "slider"
+    },
+    "images.slider.create": {
+        "class": "App\\Client\\Images\\Slider\\Create\\CreateClient",
+        "model": "slider"
+    },
+    "images.slider.update": {
+        "class": "App\\Client\\Images\\Slider\\Update\\UpdateClient",
+        "model": "slider"
     }
 }

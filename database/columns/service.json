@@ -150,5 +150,10 @@
         "controller": "Referers",
         "dir": "Customer",
         "model": "CustomerReferer"
+    },
+    "Images/slider": {
+        "controller": "Slider",
+        "dir": "Images",
+        "model": "Slider"
     }
 }
