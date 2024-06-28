@@ -49,6 +49,8 @@ use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
 use App\Repositories\Resources\User\PhotosRepository;
 use App\Repositories\Resources\User\UserRepository;
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\Resources\User\Contracts\UserCountriesRepositoryContract;
+use App\Repositories\Resources\User\CountriesRepository as UserCountriesRepository;
 use App\Repositories\Resources\Orders\Contracts\OrdersCommentRepositoryContract;
 use App\Repositories\Resources\Orders\CommentRepository as OrdersCommentRepository;
 use App\Repositories\Resources\Images\Contracts\ImagesSliderRepositoryContract;
@@ -131,6 +133,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(CustomerReferersRepositoryContract::class,CustomerReferersRepository::class);
         $this->app->bind(ImagesSliderRepositoryContract::class,ImagesSliderRepository::class);
         $this->app->bind(OrdersCommentRepositoryContract::class,OrdersCommentRepository::class);
+        $this->app->bind(UserCountriesRepositoryContract::class,UserCountriesRepository::class);
         //newBind
     }
 

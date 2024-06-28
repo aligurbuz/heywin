@@ -27,6 +27,7 @@ use App\Repositories\Resources\Timezones\Contracts\TimezonesRepositoryContract;
 use App\Repositories\Resources\User\Contracts\PhotosRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserActivationsRepositoryContract;
 use App\Repositories\Resources\User\Contracts\UserRepositoryContract;
+use App\Repositories\Resources\User\Contracts\UserCountriesRepositoryContract;
 use App\Repositories\Resources\Orders\Contracts\OrdersCommentRepositoryContract;
 use App\Repositories\Resources\Images\Contracts\ImagesSliderRepositoryContract;
 use App\Repositories\Resources\Customer\Contracts\CustomerReferersRepositoryContract;
@@ -50,6 +51,16 @@ use App\Repositories\Resources\Store\Contracts\StoreProductsRepositoryContract;
  */
 class Repository
 {
+    /**
+     * get userCountry repository instance
+     *
+     * @return UserCountriesRepositoryContract
+     */
+    public static function userCountry() : UserCountriesRepositoryContract
+    {
+        return app()->get(UserCountriesRepositoryContract::class);
+    }
+    
     /**
      * get orderComment repository instance
      *

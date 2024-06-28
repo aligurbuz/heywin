@@ -22,7 +22,8 @@
         "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json",
         "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json",
         "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json",
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Front/Front.json"
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Front/Front.json",
+        "/var/www/html/app/heywin/app/Docs/Endpoints/User/User.json"
     ],
     "keys": {
         "/var/www/html/app/api/app/Docs/Endpoints/User/User.json": 0,
@@ -45,7 +46,8 @@
         "/var/www/html/app/heywin/app/Docs/Endpoints/Orders/Orders.json": 1,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Payment/Payment.json": 0,
         "/var/www/html/app/heywin/app/Docs/Endpoints/Customer/Customer.json": 7,
-        "/var/www/html/app/heywin/app/Docs/Endpoints/Front/Front.json": 0
+        "/var/www/html/app/heywin/app/Docs/Endpoints/Front/Front.json": 0,
+        "/var/www/html/app/heywin/app/Docs/Endpoints/User/User.json": 0
     },
     "fingerPrints": {
         "User_User_user": 0,
@@ -86,6 +88,7 @@
         "Payments_Customer_customerPayment": 6,
         "Referers_Customer_customerReferer": 7,
         "Slider_Images_slider": 1,
-        "Comment_Orders_orderComment": 1
+        "Comment_Orders_orderComment": 1,
+        "Countries_User_userCountry": 0
     }
 }

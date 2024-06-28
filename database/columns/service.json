@@ -160,5 +160,10 @@
         "controller": "Comment",
         "dir": "Orders",
         "model": "OrderComment"
+    },
+    "User/countries": {
+        "controller": "Countries",
+        "dir": "User",
+        "model": "UserCountry"
     }
 }

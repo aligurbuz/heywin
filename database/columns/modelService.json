@@ -154,5 +154,9 @@
     "OrderComment": {
         "controller": "Comment",
         "dir": "Orders"
+    },
+    "UserCountry": {
+        "controller": "Countries",
+        "dir": "User"
     }
 }

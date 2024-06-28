@@ -6,6 +6,15 @@ class EntityMap
 {
     /**
      * @param object $query
+     * @return UserCountry
+     */
+    public function userCountry(object $query) : UserCountry
+    {
+        return new UserCountry($query);
+    }
+    
+    /**
+     * @param object $query
      * @return OrderComment
      */
     public function orderComment(object $query) : OrderComment

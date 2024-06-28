@@ -142,5 +142,10 @@
         "get": "App\\Client\\Orders\\Comment\\Get\\GetClient",
         "create": "App\\Client\\Orders\\Comment\\Create\\CreateClient",
         "update": "App\\Client\\Orders\\Comment\\Update\\UpdateClient"
+    },
+    "UserCountry": {
+        "get": "App\\Client\\User\\Countries\\Get\\GetClient",
+        "create": "App\\Client\\User\\Countries\\Create\\CreateClient",
+        "update": "App\\Client\\User\\Countries\\Update\\UpdateClient"
     }
 }

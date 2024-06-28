@@ -13,7 +13,8 @@
     "country_code": [
         "City",
         "Country",
-        "DrawCountry"
+        "DrawCountry",
+        "UserCountry"
     ],
     "num_code": [
         "Country"
@@ -149,6 +150,7 @@
     "user_code": [
         "SuperAdmin",
         "UserActivation",
+        "UserCountry",
         "UserPhoto"
     ],
     "table_change_code": [
@@ -162,6 +164,9 @@
     ],
     "user_activation_code": [
         "UserActivation"
+    ],
+    "user_country_code": [
+        "UserCountry"
     ],
     "user_photo_code": [
         "UserPhoto"

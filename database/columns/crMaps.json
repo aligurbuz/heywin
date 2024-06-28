@@ -326,5 +326,17 @@
     "orders.comment.update": {
         "class": "App\\Client\\Orders\\Comment\\Update\\UpdateClient",
         "model": "orderComment"
+    },
+    "user.countries.get": {
+        "class": "App\\Client\\User\\Countries\\Get\\GetClient",
+        "model": "userCountry"
+    },
+    "user.countries.create": {
+        "class": "App\\Client\\User\\Countries\\Create\\CreateClient",
+        "model": "userCountry"
+    },
+    "user.countries.update": {
+        "class": "App\\Client\\User\\Countries\\Update\\UpdateClient",
+        "model": "userCountry"
     }
 }

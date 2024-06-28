@@ -47,6 +47,7 @@
         "Timezone",
         "User",
         "UserActivation",
+        "UserCountry",
         "UserPhoto"
     ],
     "City": [
@@ -63,7 +64,8 @@
         "City",
         "District",
         "DrawCountry",
-        "Localization"
+        "Localization",
+        "UserCountry"
     ],
     "DrawCountry": [
         "Country",
@@ -97,6 +99,7 @@
         "CustomerBalance",
         "CustomerContact",
         "Order",
+        "OrderComment",
         "CustomerGender",
         "CustomerImage",
         "CustomerReferer",
@@ -110,13 +113,21 @@
     "CustomerContact": [
         "Customer",
         "Order",
+        "OrderComment",
         "Localization"
     ],
     "Order": [
         "Customer",
         "CustomerContact",
-        "Localization",
-        "OrderComment"
+        "OrderComment",
+        "Localization"
+    ],
+    "OrderComment": [
+        "Customer",
+        "CustomerContact",
+        "Order",
+        "Product",
+        "Localization"
     ],
     "CustomerGender": [
         "Customer",
@@ -179,11 +190,6 @@
         "FrontLang",
         "Localization"
     ],
-    "OrderComment": [
-        "Product",
-        "Order",
-        "Localization"
-    ],
     "PasswordChange": [
         "Localization"
     ],
@@ -210,7 +216,8 @@
         "UserActivation",
         "UserPhoto",
         "Role",
-        "Localization"
+        "Localization",
+        "UserCountry"
     ],
     "TableChange": [
         "Localization"
@@ -224,6 +231,11 @@
     ],
     "UserPhoto": [
         "User",
+        "Localization"
+    ],
+    "UserCountry": [
+        "User",
+        "Country",
         "Localization"
     ]
 }
