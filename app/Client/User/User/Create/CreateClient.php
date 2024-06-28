@@ -22,7 +22,7 @@ class CreateClient extends Client
      *
      * @var array
      */
-    protected array $capsule = ['registration_code'];
+    protected array $capsule = ['registration_code', 'country'];
 
     /**
      * get model entity validation
@@ -41,5 +41,6 @@ class CreateClient extends Client
         'email' => 'required',
         'password' => 'required|atLeastUpperLowerNumber|min:6',
         'username' => 'required|string',
+        'country' => 'array',
     ];
 }

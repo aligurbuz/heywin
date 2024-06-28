@@ -69,5 +69,7 @@ trait UserPropertyHandlerTrait
      *
      * @var array
      */
-    protected array $addPostQueries = [];
+    protected array $addPostQueries = [
+        'country' => 'user.countries'
+    ];
 }
