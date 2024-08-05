@@ -16,7 +16,7 @@ trait LocalizationsPromoterTrait
      */
     public function localizationsRepository(?object $builder = null): object
     {
-        return $this->apply($builder)->where('language_code', appLanguageCode());
+        return $this->apply($builder);
     }
 
     /**
