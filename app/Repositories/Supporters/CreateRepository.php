@@ -44,6 +44,8 @@ trait CreateRepository
                 $this->beforeCreate($clientData);
             }
 
+            $clientData = isset($clientData[0]) ? $clientData : [$clientData];
+
             foreach ($clientData as $clientDataKey => $value) {
 
                 if ($this->getEventStatus() && method_exists($this, 'eventFireBeforeCreate')) {
