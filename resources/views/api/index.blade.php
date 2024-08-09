@@ -557,7 +557,7 @@ wget --no-check-certificate --quiet \
 
                             <div class="language-php highlighter-rouge">
                                 <div class="highlight"><pre class="highlight"><code><span
-                                                    class="c1">// Api Request</span>
+                                                class="c1">// Api Request</span>
 wget --no-check-certificate --quiet \
   --method GET \
   --timeout=0 \
@@ -663,7 +663,7 @@ wget --no-check-certificate --quiet \
 
                             <div class="language-php highlighter-rouge">
                                 <div class="highlight"><pre class="highlight"><code><span
-                                                    class="c1">// Api Request</span>
+                                                class="c1">// Api Request</span>
 wget --no-check-certificate --quiet \
   --method GET \
   --timeout=0 \
@@ -679,7 +679,7 @@ wget --no-check-certificate --quiet \
 
                             <div class="language-php highlighter-rouge">
                                 <div class="highlight"><pre class="highlight"><code><span
-                                                    class="c1">// Api Request</span>
+                                                class="c1">// Api Request</span>
 wget --no-check-certificate --quiet \
   --method GET \
   --timeout=0 \
@@ -1324,7 +1324,7 @@ wget --no-check-certificate --quiet \
 
                                             @php
 
-                                                    @endphp
+                                                @endphp
 
                                             @if(isset($value['request']['body']['mode']))
                                                 @php
@@ -1537,7 +1537,7 @@ wget --no-check-certificate --quiet \
 
                                                                 @if(getTableCode($model)==$field)
                                                                     <td style="background-color: #ddffdd;"><code
-                                                                                class="language-plaintext highlighter-rouge">true</code>
+                                                                            class="language-plaintext highlighter-rouge">true</code>
                                                                     </td>
                                                                 @else
                                                                     @if(isset($clientRule[$field]))
@@ -1548,7 +1548,7 @@ wget --no-check-certificate --quiet \
 
                                                                         @endphp
                                                                         <td {{$crequiredColors}}><code
-                                                                                    class="language-plaintext highlighter-rouge">{{$crequired}}</code>
+                                                                                class="language-plaintext highlighter-rouge">{{$crequired}}</code>
                                                                         </td>
                                                                     @else
                                                                         <td>
@@ -1562,13 +1562,13 @@ wget --no-check-certificate --quiet \
 
                                                                 @if(isset($entities['required_columns']) && in_array($field,$entities['required_columns'],true))
                                                                     <td style="background-color: #ddffdd;"><code
-                                                                                class="language-plaintext highlighter-rouge">true</code>
+                                                                            class="language-plaintext highlighter-rouge">true</code>
                                                                     </td>
                                                                 @else
                                                                     @if(isset($clientCapsuleList[$field]['required']))
                                                                         @if($clientCapsuleList[$field]['required']===true)
                                                                             <td style="background-color: #ddffdd;"><code
-                                                                                        class="language-plaintext highlighter-rouge">{{$clientCapsuleList[$field]['required']}}</code>
+                                                                                    class="language-plaintext highlighter-rouge">{{$clientCapsuleList[$field]['required']}}</code>
                                                                             </td>
                                                                         @else
                                                                             <td>
@@ -1596,7 +1596,27 @@ wget --no-check-certificate --quiet \
                                                                     @if(isset($getClientCapsuleComments[$field]))
                                                                         <td>{{$getClientCapsuleComments[$field]}}</td>
                                                                     @else
-                                                                        <td>{{$comments[$field] ?? ''}}</td>
+                                                                        @if(isset($types[$field]) && $types[$field]=='enum')
+                                                                            @php
+                                                                                $enumValues = '';
+                                                                                $enumDefValue = '';
+                                                                                if(in_array($field,$entities['enum_columns'],true)){
+                                                                                    $fieldEnumKey = array_search($field,$entities['enum_columns']);
+                                                                                    $enumValues = $entities['enum_values'][$fieldEnumKey];
+
+                                                                                }
+
+                                                                                if(in_array($field,$entities['default_keys'],true)){
+                                                                                    $fieldEnumDefKey = array_search($field,$entities['default_keys']);
+                                                                                    $enumDefValue = $entities['default_values'][$fieldEnumDefKey];
+
+                                                                                }
+                                                                            @endphp
+                                                                            <td>{{$comments[$field] ?? ''}} (Enum Values: {{$enumValues}}) (Default Value: {{$enumDefValue}} ) </td>
+                                                                        @else
+                                                                            <td>{{$comments[$field] ?? ''}}</td>
+                                                                        @endif
+
                                                                     @endif
 
                                                                 @endif
@@ -1615,7 +1635,7 @@ wget --no-check-certificate --quiet \
                                                     <p><b>The values of the key named as ({{$cckey}}) in the body
                                                             parameter are listed below.</b><br>
                                                         Sample client value to be sent to the service: <br> <a
-                                                                style="color: #22863a; font-weight: bold;">"{{$cckey}}"
+                                                            style="color: #22863a; font-weight: bold;">"{{$cckey}}"
                                                             : [{"clientParameter": "value"}] </a>
                                                     </p>
 
@@ -1648,15 +1668,15 @@ wget --no-check-certificate --quiet \
                                                                     <td>
                                                                         @if(isset($crCapsuleRules[$cckey][$ccItemData]))
                                                                             @php
-                                                                            $capRule = str_replace('required|','',$crCapsuleRules[$cckey][$ccItemData]);
-                                                                            $capRule = str_replace('|required','',$capRule);
+                                                                                $capRule = str_replace('required|','',$crCapsuleRules[$cckey][$ccItemData]);
+                                                                                $capRule = str_replace('|required','',$capRule);
                                                                             @endphp
 
                                                                             <code class="language-plaintext highlighter-rouge">{{$capRule}}</code>
                                                                         @else
 
                                                                             <code class="language-plaintext highlighter-rouge">{{$crTypeKeys[$cckey][$ccItemKey] ?? 'string'}}</code>
-                                                                            @endif
+                                                                        @endif
 
                                                                     </td>
 
@@ -1668,7 +1688,7 @@ wget --no-check-certificate --quiet \
 
                                                                     @if(in_array($ccItemData,$crRequiredList[$cckey],true))
                                                                         <td style="background-color: #ddffdd;"><code
-                                                                                    class="language-plaintext highlighter-rouge">true</code>
+                                                                                class="language-plaintext highlighter-rouge">true</code>
                                                                         </td>
                                                                     @else
                                                                         <td>
@@ -1679,7 +1699,7 @@ wget --no-check-certificate --quiet \
                                                                 @else
                                                                     @if(in_array($ccItemData,$crRequiredKeys[$cckey],true))
                                                                         <td style="background-color: #ddffdd;"><code
-                                                                                    class="language-plaintext highlighter-rouge">true</code>
+                                                                                class="language-plaintext highlighter-rouge">true</code>
                                                                         </td>
                                                                     @else
                                                                         <td>
@@ -1693,10 +1713,10 @@ wget --no-check-certificate --quiet \
                                                                 <td>
                                                                     @if(isset($crCapsuleComments[$cckey][$ccItemData]))
                                                                         <code class="language-plaintext highlighter-rouge">{{$crCapsuleComments[$cckey][$ccItemData]}}</code>
-                                                                        @else
+                                                                    @else
 
                                                                         <code class="language-plaintext highlighter-rouge">{{$crCommentKeys[$cckey][$ccItemKey] ?? ''}}</code>
-                                                                        @endif
+                                                                    @endif
 
                                                                 </td>
 
@@ -1910,7 +1930,7 @@ wget --no-check-certificate --quiet \
 
                         <div class="language-php highlighter-rouge">
                             <div class="highlight"><pre class="highlight"><code><span
-                                                class="c1">// Default Api Request</span>
+                                            class="c1">// Default Api Request</span>
 wget --no-check-certificate --quiet \
   --method GET \
   --timeout=0 \
