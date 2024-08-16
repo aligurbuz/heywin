@@ -109,7 +109,14 @@ trait ScopeManager
 
         foreach (($rangeHandler['ranges'] ?? []) as $data) {
             if (array_key_exists($data, ($rangeHandler['modelRanges'] ?? [])) && method_exists($object, $data)) {
-                $object->$data($builder);
+                $rangeBindings = AppContainer::get('rangeBindings',[]);
+                if(isset($rangeBindings[$data])){
+                    $object->$data($builder,$rangeBindings[$data]);
+                }
+                else{
+                    $object->$data($builder);
+                }
+
             } elseif (array_key_exists($data, ($rangeHandler['modelRanges'] ?? [])) && method_exists($object, 'rangeHandler')) {
                 $object->rangeHandler($builder, $data);
             }
@@ -399,11 +406,6 @@ trait ScopeManager
                                 $hasFilter = [$currentHasSplit[1] => [
                                     $currentHasSplitOperator => $currentHasSplitData
                                 ]];
-                            }
-
-                            if (isset($request['hasFilter']) && count($hasFilter) == '0') {
-                                Exception::customException(trans('exception.hasFilterException', ['key' => $has]));
-                                return $builder;
                             }
 
                             $repository = getModelWithPlural($has);
