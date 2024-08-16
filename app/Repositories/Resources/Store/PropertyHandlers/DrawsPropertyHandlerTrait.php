@@ -12,6 +12,8 @@ trait DrawsPropertyHandlerTrait
 	 * @var array
 	 */
 	protected array $ranges = [
+        'productCategory' => 'It allows you to receive draw response with products and categories.productCategory also accepts range parameters.
+        For example: When range is written with (productCategory:category_code). It performs (category_code) filtering under the product_categories object.',
         'inDate' => 'Lists valid draws.',
         'country' => 'gets country of the draw.',
     ];

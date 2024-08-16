@@ -6,6 +6,8 @@ namespace App\Repositories\Resources\Store\Promoters\Draws;
 
 use App\Libs\Date;
 use App\Models\Entities\Draw;
+use App\Repositories\EloquentRepository;
+use Illuminate\Database\Eloquent\Builder;
 
 trait DrawsPromoterTrait
 {
@@ -64,5 +66,37 @@ trait DrawsPromoterTrait
                 ]
             ]
         ]);
+    }
+
+    /**
+     * get authenticated user data
+     *
+     * @param null|Builder $builder
+     * @param string|null $binding
+     * @return EloquentRepository
+     */
+    public function productCategory(Builder $builder = null, ?string $binding = null): EloquentRepository
+    {
+        assignQueryParameters([
+            'with' => [
+                'product' => [
+                    'select' => '*',
+                    "with" => [
+                        'productCategories' => ['select' => '*']
+                    ]
+                ]
+            ]
+        ]);
+
+        if(!is_null($binding)){
+
+            $this->repository = $this->builder($builder)->whereHas('product',function($product) use($binding){
+                $product->whereHas('productCategories',function($category) use($binding){
+                    $category->where('category_code',$binding);
+                });
+            });
+        }
+
+        return $this;
     }
 }
