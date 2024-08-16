@@ -89,7 +89,6 @@ trait DrawsPromoterTrait
         ]);
 
         if(!is_null($binding)){
-
             $this->repository = $this->builder($builder)->whereHas('product',function($product) use($binding){
                 $product->whereHas('productCategories',function($category) use($binding){
                     $category->where('category_code',$binding);
