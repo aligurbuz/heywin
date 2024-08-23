@@ -14,5 +14,7 @@ class FrontLang extends Model
 
     protected array $withQuery = [];
 
+    protected bool $filterException = false;
+
     protected $hidden = ['id'];
 }
