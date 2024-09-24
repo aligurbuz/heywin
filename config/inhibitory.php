@@ -20,6 +20,8 @@ return [
         'customer/profiles' => ['GET','PUT'],
         'customer/referers' => ['GET','PUT','POST'],
         'customer/balances' => ['GET','POST','PUT'],
+        'customer/contacts' => ['GET','POST','PUT'],
+        'customer/images' => ['GET','POST','PUT'],
         'payment/types' => ['GET'],
         'store/drawTickets' => ['GET','PUT','POST'],
         'logout' => ['POST'],
