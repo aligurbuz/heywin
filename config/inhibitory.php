@@ -22,6 +22,7 @@ return [
         'customer/balances' => ['GET','POST','PUT'],
         'customer/contacts' => ['GET','POST','PUT'],
         'customer/images' => ['GET','POST','PUT'],
+        'customer/payments' => ['GET','POST','PUT'],
         'payment/types' => ['GET'],
         'store/drawTickets' => ['GET','PUT','POST'],
         'logout' => ['POST'],
